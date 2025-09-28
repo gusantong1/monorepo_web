@@ -34,7 +34,7 @@
     "commit": "czg",
     "dev": "turbo-run dev",
     "dev:docs": "pnpm -F @vben/docs run dev",
-    "dev:vue-bw-web-ly": "pnpm -F @web/vue-bw-web-ly run dev",
+    "dev:vue-bw-web-ly-pc": "pnpm -F @web/vue-bw-web-ly-pc run dev",
     "format": "vsh lint --format",
     "lint": "vsh lint",
     "postinstall": "pnpm -r run stub --if-present",
@@ -47,9 +47,6 @@
     "update:deps": "npx taze -r -w",
     "version": "pnpm exec changeset version && pnpm install --no-frozen-lockfile",
     "catalog": "pnpx codemod pnpm/catalog"
-  },
-  "dependencies": {
-    "moment": "^2.30.1"
   },
   "devDependencies": {
     "@changesets/changelog-github": "catalog:",
