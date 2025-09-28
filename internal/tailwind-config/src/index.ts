@@ -150,7 +150,7 @@ export default {
       animationDuration: {
         '2000': '2000ms',
         '3000': '3000ms',
-      },
+      } as any,
       borderRadius: {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',
@@ -202,7 +202,7 @@ export default {
     },
   },
   safelist: ['dark'],
-} as Config;
+} satisfies Config;
 
 function createColorsPalette(name: string) {
   // backgroundLightest: '#EFF6FF', // Tailwind CSS 默认的 `blue-50`

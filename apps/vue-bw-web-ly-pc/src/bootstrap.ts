@@ -9,21 +9,14 @@ import '@vben/styles/ele';
 
 import { useTitle } from '@vueuse/core';
 import { ElLoading } from 'element-plus';
+import PrimeVue from 'primevue/config';
 
 import { $t, setupI18n } from '#/locales';
 
-import { initComponentAdapter } from './adapter/component';
-import { initSetupVbenForm } from './adapter/form';
 import App from './app.vue';
 import { router } from './router';
 
 async function bootstrap(namespace: string) {
-  // 初始化组件适配器
-  await initComponentAdapter();
-
-  // 初始化表单组件
-  await initSetupVbenForm();
-
   // // 设置弹窗的默认配置
   // setDefaultModalProps({
   //   fullscreenButton: false,
@@ -62,6 +55,8 @@ async function bootstrap(namespace: string) {
   // 配置Motion插件
   const { MotionPlugin } = await import('@vben/plugins/motion');
   app.use(MotionPlugin);
+  // 单独集成PrimeVue
+  app.use(PrimeVue);
 
   // 动态更新标题
   watchEffect(() => {

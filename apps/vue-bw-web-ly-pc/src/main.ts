@@ -12,7 +12,7 @@ async function initApplication() {
   const env = import.meta.env.PROD ? 'prod' : 'dev';
   const appVersion = import.meta.env.VITE_APP_VERSION;
   const namespace = `${import.meta.env.VITE_APP_NAMESPACE}-${appVersion}-${env}`;
-
+  console.log('namespace', namespace);
   // app偏好设置初始化
   await initPreferences({
     namespace,

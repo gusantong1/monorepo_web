@@ -1,5 +1,5 @@
 {
-  "name": "@web/vue-bw-web-ly",
+  "name": "@web/vue-bw-web-ly-pc",
   "version": "5.5.9",
   "homepage": "https://vben.pro",
   "bugs": "https://github.com/vbenjs/vue-vben-admin/issues",
@@ -44,6 +44,8 @@
     "dayjs": "catalog:",
     "element-plus": "catalog:",
     "pinia": "catalog:",
+    "primevue": "catalog:",
+    "tailwindcss-primeui": "catalog:",
     "vue": "catalog:",
     "vue-router": "catalog:"
   },
