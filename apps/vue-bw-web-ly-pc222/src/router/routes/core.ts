@@ -5,7 +5,6 @@ import { preferences } from '@web/preferences';
 
 import { $t } from '#/locales';
 
-import layoutCommonRoutes from './modules/layout-common';
 // const BasicLayout = () => import('#/layouts/basic.vue');
 // const AuthPageLayout = () => import('#/layouts/auth.vue');
 
@@ -48,7 +47,7 @@ const coreRoutes: RouteRecordRaw[] = [
       {
         name: 'CodeLogin',
         path: 'code-login',
-        component: () => {},
+        component: () =>  {},
         meta: {
           title: $t('page.auth.codeLogin'),
         },
@@ -56,7 +55,7 @@ const coreRoutes: RouteRecordRaw[] = [
       {
         name: 'QrCodeLogin',
         path: 'qrcode-login',
-        component: () => {},
+        component: () =>{},
         meta: {
           title: $t('page.auth.qrcodeLogin'),
         },
@@ -64,7 +63,7 @@ const coreRoutes: RouteRecordRaw[] = [
       {
         name: 'ForgetPassword',
         path: 'forget-password',
-        component: () => {},
+        component: () =>{},
         meta: {
           title: $t('page.auth.forgetPassword'),
         },
@@ -79,10 +78,6 @@ const coreRoutes: RouteRecordRaw[] = [
       },
     ],
   },
-  /**
-   * @description 通用布局路由
-   */
-  ...layoutCommonRoutes,
 ];
 
 export { coreRoutes };
