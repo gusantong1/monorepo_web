@@ -34,7 +34,7 @@ The rules are consistent with [Vite Env Variables and Modes](https://vitejs.dev/
 VITE_APP_TITLE=Vben Admin
 
 # Application namespace, used as a prefix for caching, store, etc., to ensure isolation
-VITE_APP_NAMESPACE=vben-web-antd
+VITE_APP_NAMESPACE=web-web-antd
 ```
 
 ```bash [.env.development]
@@ -65,7 +65,7 @@ VITE_ARCHIVER=true
 VITE_BASE=/
 
 # API URL
-VITE_GLOB_API_URL=https://mock-napi.vben.pro/api
+VITE_GLOB_API_URL=https://mock-napi.web.pro/api
 
 # Whether to enable compression, can be set to none, brotli, gzip
 VITE_COMPRESS=gzip
@@ -93,7 +93,7 @@ When executing `pnpm build` in the root directory of the monorepo, a `dist/_app.
 
 ```ts
 window._VBEN_ADMIN_PRO_APP_CONF_ = {
-  VITE_GLOB_API_URL: 'https://mock-napi.vben.pro/api',
+  VITE_GLOB_API_URL: 'https://mock-napi.web.pro/api',
 };
 Object.freeze(window._VBEN_ADMIN_PRO_APP_CONF_);
 Object.defineProperty(window, '_VBEN_ADMIN_PRO_APP_CONF_', {
@@ -108,7 +108,7 @@ Object.defineProperty(window, '_VBEN_ADMIN_PRO_APP_CONF_', {
 
 ### Usage
 
-To access the variables inside `_app.config.js`, you need to use the `useAppConfig` method provided by `@vben/hooks`.
+To access the variables inside `_app.config.js`, you need to use the `useAppConfig` method provided by `@web/hooks`.
 
 ```ts
 const { apiURL } = useAppConfig(import.meta.env, import.meta.env.PROD);
@@ -121,7 +121,7 @@ To add a new dynamically modifiable configuration item, simply follow the steps 
 - First, add the variable that needs to be dynamically configurable in the `.env` file or the corresponding development environment configuration file. The variable must start with `VITE_GLOB_*`, for example:
 
   ```bash
-  VITE_GLOB_OTHER_API_URL=https://mock-napi.vben.pro/other-api
+  VITE_GLOB_OTHER_API_URL=https://mock-napi.web.pro/other-api
   ```
 
 - In `packages/types/global.d.ts`, add the corresponding type definition, such as:
@@ -180,8 +180,8 @@ The project offers a wide range of preference settings for dynamically configuri
 If you cannot find documentation for a setting, you can try configuring it yourself and then click `Copy Preferences` to override the project defaults. The configuration file is located in the application directory under `preferences.ts`, where you can override the framework's default configurations to achieve custom settings.
 
 ```ts
-import { useAppConfig } from '@vben/hooks';
-import { defineOverridesPreferences } from '@vben/preferences';
+import { useAppConfig } from '@web/hooks';
+import { defineOverridesPreferences } from '@web/preferences';
 
 /**
  * @description Project configuration file
@@ -214,7 +214,7 @@ const defaultPreferences: Preferences = {
     contentPaddingRight: 0,
     contentPaddingTop: 0,
     defaultAvatar:
-      'https://unpkg.com/@vbenjs/static-source@0.1.7/source/avatar-v1.webp',
+      'https://unpkg.com/@webjs/static-source@0.1.7/source/avatar-v1.webp',
     defaultHomePath: '/analytics',
     dynamicTitle: true,
     enableCheckUpdates: true,
@@ -238,7 +238,7 @@ const defaultPreferences: Preferences = {
   },
   copyright: {
     companyName: 'Vben',
-    companySiteLink: 'https://www.vben.pro',
+    companySiteLink: 'https://www.web.pro',
     date: '2024',
     enable: true,
     icp: '',
@@ -260,7 +260,7 @@ const defaultPreferences: Preferences = {
   logo: {
     enable: true,
     fit: 'contain',
-    source: 'https://unpkg.com/@vbenjs/static-source@0.1.7/source/logo-v1.webp',
+    source: 'https://unpkg.com/@webjs/static-source@0.1.7/source/logo-v1.webp',
   },
   navigation: {
     accordion: true,

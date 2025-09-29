@@ -1,6 +1,6 @@
 import { h } from 'vue';
 
-import { setupVbenVxeTable, useVbenVxeGrid } from '@vben/plugins/vxe-table';
+import { setupVbenVxeTable, useVbenVxeGrid } from '@web/plugins/vxe-table';
 
 import { Button, Image } from 'ant-design-vue';
 
@@ -67,4 +67,4 @@ if (!import.meta.env.SSR) {
 
 export { useVbenVxeGrid };
 
-export type * from '@vben/plugins/vxe-table';
+export type * from '@web/plugins/vxe-table';

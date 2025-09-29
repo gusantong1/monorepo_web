@@ -1,16 +1,16 @@
 <div align="center">
-  <a href="https://github.com/anncwb/vue-vben-admin">
-    <img alt="VbenAdmin Logo" width="215" src="https://unpkg.com/@vbenjs/static-source@0.1.7/source/logo-v1.webp">
+  <a href="https://github.com/anncwb/vue-web-admin">
+    <img alt="VbenAdmin Logo" width="215" src="https://unpkg.com/@webjs/static-source@0.1.7/source/logo-v1.webp">
   </a>
   <br>
   <br>
 
-[![license](https://img.shields.io/github/license/anncwb/vue-vben-admin.svg)](LICENSE)
+[![license](https://img.shields.io/github/license/anncwb/vue-web-admin.svg)](LICENSE)
 
   <h1>Vue Vben Admin</h1>
 </div>
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=vbenjs_vue-vben-admin&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=vbenjs_vue-vben-admin) ![codeql](https://github.com/vbenjs/vue-vben-admin/actions/workflows/codeql.yml/badge.svg) ![build](https://github.com/vbenjs/vue-vben-admin/actions/workflows/build.yml/badge.svg) ![ci](https://github.com/vbenjs/vue-vben-admin/actions/workflows/ci.yml/badge.svg) ![deploy](https://github.com/vbenjs/vue-vben-admin/actions/workflows/deploy.yml/badge.svg)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=webjs_vue-web-admin&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=webjs_vue-web-admin) ![codeql](https://github.com/webjs/vue-web-admin/actions/workflows/codeql.yml/badge.svg) ![build](https://github.com/webjs/vue-web-admin/actions/workflows/build.yml/badge.svg) ![ci](https://github.com/webjs/vue-web-admin/actions/workflows/ci.yml/badge.svg) ![deploy](https://github.com/webjs/vue-web-admin/actions/workflows/deploy.yml/badge.svg)
 
 **English** | [中文](./README.zh-CN.md) | [日本語](./README.ja-JP.md)
 
@@ -20,7 +20,7 @@ Vue Vben Admin is a free and open source middle and back-end template. Using the
 
 ## Upgrade Notice
 
-This is the latest version, 5.0, and it is not compatible with previous versions. If you are starting a new project, it is recommended to use the latest version. If you wish to view the old version, please use the [v2 branch](https://github.com/vbenjs/vue-vben-admin/tree/v2).
+This is the latest version, 5.0, and it is not compatible with previous versions. If you are starting a new project, it is recommended to use the latest version. If you wish to view the old version, please use the [v2 branch](https://github.com/webjs/vue-web-admin/tree/v2).
 
 ## Features
 
@@ -32,9 +32,9 @@ This is the latest version, 5.0, and it is not compatible with previous versions
 
 ## Preview
 
-- [Vben Admin](https://vben.pro/) - Full version Chinese site
+- [Vben Admin](https://web.pro/) - Full version Chinese site
 
-Test Account: vben/123456
+Test Account: web/123456
 
 <div align="center">
   <img alt="VbenAdmin Logo" width="100%" src="https://anncwb.github.io/anncwb/images/preview1.png">
@@ -46,24 +46,24 @@ Test Account: vben/123456
 
 Open the project in Gitpod (free online dev environment for GitHub) and start coding immediately.
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/vbenjs/vue-vben-admin)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/webjs/vue-web-admin)
 
 ## Documentation
 
-[Document](https://doc.vben.pro/)
+[Document](https://doc.web.pro/)
 
 ## Install and Use
 
 1. Get the project code
 
 ```bash
-git clone https://github.com/vbenjs/vue-vben-admin.git
+git clone https://github.com/webjs/vue-web-admin.git
 ```
 
 2. Install dependencies
 
 ```bash
-cd vue-vben-admin
+cd vue-web-admin
 npm i -g corepack
 pnpm install
 ```
@@ -82,11 +82,11 @@ pnpm build
 
 ## Change Log
 
-[CHANGELOG](https://github.com/vbenjs/vue-vben-admin/releases)
+[CHANGELOG](https://github.com/webjs/vue-web-admin/releases)
 
 ## How to Contribute
 
-You are very welcome to join! [Raise an issue](https://github.com/anncwb/vue-vben-admin/issues/new/choose) or submit a Pull Request.
+You are very welcome to join! [Raise an issue](https://github.com/anncwb/vue-web-admin/issues/new/choose) or submit a Pull Request.
 
 **Pull Request Process:**
 
@@ -128,29 +128,29 @@ Support modern browsers, not IE
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=vbenjs/vue-vben-admin&type=Date)](https://star-history.com/#vbenjs/vue-vben-admin&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=webjs/vue-web-admin&type=Date)](https://star-history.com/#webjs/vue-web-admin&Date)
 
 ## Donate
 
 If you think this project is helpful to you, you can help the author buy a cup of coffee to show your support!
 
-![donate](https://unpkg.com/@vbenjs/static-source@0.1.7/source/sponsor.png)
+![donate](https://unpkg.com/@webjs/static-source@0.1.7/source/sponsor.png)
 
-<a style="display: block;width: 100px;height: 50px;line-height: 50px; color: #fff;text-align: center; background: #408aee;border-radius: 4px;" href="https://www.paypal.com/paypalme/cvvben">Paypal Me</a>
+<a style="display: block;width: 100px;height: 50px;line-height: 50px; color: #fff;text-align: center; background: #408aee;border-radius: 4px;" href="https://www.paypal.com/paypalme/cvweb">Paypal Me</a>
 
 ## Contributors
 
-<a href="https://openomy.app/github/vbenjs/vue-vben-admin" target="_blank" style="display: block; width: 100%;" align="center">
-  <img src="https://openomy.app/svg?repo=vbenjs/vue-vben-admin&chart=bubble&latestMonth=3" target="_blank" alt="Contribution Leaderboard" style="display: block; width: 100%;" />
+<a href="https://openomy.app/github/webjs/vue-web-admin" target="_blank" style="display: block; width: 100%;" align="center">
+  <img src="https://openomy.app/svg?repo=webjs/vue-web-admin&chart=bubble&latestMonth=3" target="_blank" alt="Contribution Leaderboard" style="display: block; width: 100%;" />
  </a>
 
-<a href="https://github.com/vbenjs/vue-vben-admin/graphs/contributors">
-  <img alt="Contributors" src="https://contrib.rocks/image?repo=vbenjs/vue-vben-admin" />
+<a href="https://github.com/webjs/vue-web-admin/graphs/contributors">
+  <img alt="Contributors" src="https://contrib.rocks/image?repo=webjs/vue-web-admin" />
 </a>
 
 ## Discord
 
-- [Github Discussions](https://github.com/anncwb/vue-vben-admin/discussions)
+- [Github Discussions](https://github.com/anncwb/vue-web-admin/discussions)
 
 ## License
 

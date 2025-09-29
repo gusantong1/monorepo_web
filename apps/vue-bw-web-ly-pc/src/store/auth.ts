@@ -1,13 +1,13 @@
-import type { Recordable, UserInfo } from '@vben/types';
+import type { Recordable, UserInfo } from '@web/types';
 
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 
-import { LOGIN_PATH } from '@vben/constants';
-import { preferences } from '@vben/preferences';
-import { resetAllStores, useAccessStore, useUserStore } from '@vben/stores';
+import { LOGIN_PATH } from '@web/constants';
+import { preferences } from '@web/preferences';
+import { resetAllStores, useAccessStore, useUserStore } from '@web/stores';
 
-import { ElNotification } from 'element-plus';
+// import { ElNotification } from 'element-plus';
 import { defineStore } from 'pinia';
 
 import { getAccessCodesApi, getUserInfoApi, loginApi, logoutApi } from '#/api';
@@ -62,11 +62,11 @@ export const useAuthStore = defineStore('auth', () => {
         }
 
         if (userInfo?.realName) {
-          ElNotification({
-            message: `${$t('authentication.loginSuccessDesc')}:${userInfo?.realName}`,
-            title: $t('authentication.loginSuccess'),
-            type: 'success',
-          });
+          // ElNotification({
+          //   message: `${$t('authentication.loginSuccessDesc')}:${userInfo?.realName}`,
+          //   title: $t('authentication.loginSuccess'),
+          //   type: 'success',
+          // });
         }
       }
     } finally {

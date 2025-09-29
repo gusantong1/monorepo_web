@@ -1,16 +1,16 @@
 <div align="center">
-  <a href="https://github.com/anncwb/vue-vben-admin">
-    <img alt="VbenAdmin Logo" width="215" src="https://unpkg.com/@vbenjs/static-source@0.1.7/source/logo-v1.webp">
+  <a href="https://github.com/anncwb/vue-web-admin">
+    <img alt="VbenAdmin Logo" width="215" src="https://unpkg.com/@webjs/static-source@0.1.7/source/logo-v1.webp">
   </a>
   <br>
   <br>
 
-[![license](https://img.shields.io/github/license/anncwb/vue-vben-admin.svg)](LICENSE)
+[![license](https://img.shields.io/github/license/anncwb/vue-web-admin.svg)](LICENSE)
 
   <h1>Vue Vben Admin</h1>
 </div>
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=vbenjs_vue-vben-admin&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=vbenjs_vue-vben-admin) ![codeql](https://github.com/vbenjs/vue-vben-admin/actions/workflows/codeql.yml/badge.svg) ![build](https://github.com/vbenjs/vue-vben-admin/actions/workflows/build.yml/badge.svg) ![ci](https://github.com/vbenjs/vue-vben-admin/actions/workflows/ci.yml/badge.svg) ![deploy](https://github.com/vbenjs/vue-vben-admin/actions/workflows/deploy.yml/badge.svg)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=webjs_vue-web-admin&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=webjs_vue-web-admin) ![codeql](https://github.com/webjs/vue-web-admin/actions/workflows/codeql.yml/badge.svg) ![build](https://github.com/webjs/vue-web-admin/actions/workflows/build.yml/badge.svg) ![ci](https://github.com/webjs/vue-web-admin/actions/workflows/ci.yml/badge.svg) ![deploy](https://github.com/webjs/vue-web-admin/actions/workflows/deploy.yml/badge.svg)
 
 **日本語** | [English](./README.md) | [中文](./README.zh-CN.md)
 
@@ -20,7 +20,7 @@ Vue Vben Adminは、最新の`vue3`、`vite`、`TypeScript`などの主流技術
 
 ## アップグレード通知
 
-これは最新バージョン `5.0` であり、以前のバージョンとは互換性がありません。新しいプロジェクトを開始する場合は、最新バージョンを使用することをお勧めします。古いバージョンを表示したい場合は、[v2ブランチ](https://github.com/vbenjs/vue-vben-admin/tree/v2)を使用してください。
+これは最新バージョン `5.0` であり、以前のバージョンとは互換性がありません。新しいプロジェクトを開始する場合は、最新バージョンを使用することをお勧めします。古いバージョンを表示したい場合は、[v2ブランチ](https://github.com/webjs/vue-web-admin/tree/v2)を使用してください。
 
 ## 特徴
 
@@ -32,9 +32,9 @@ Vue Vben Adminは、最新の`vue3`、`vite`、`TypeScript`などの主流技術
 
 ## プレビュー
 
-- [Vben Admin](https://vben.pro/) - フルバージョンの中国語サイト
+- [Vben Admin](https://web.pro/) - フルバージョンの中国語サイト
 
-テストアカウント：vben/123456
+テストアカウント：web/123456
 
 <div align="center">
   <img alt="VbenAdmin Logo" width="100%" src="https://anncwb.github.io/anncwb/images/preview1.png">
@@ -46,24 +46,24 @@ Vue Vben Adminは、最新の`vue3`、`vite`、`TypeScript`などの主流技術
 
 Gitpod（GitHub用の無料オンライン開発環境）でプロジェクトを開き、すぐにコーディングを開始します。
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/vbenjs/vue-vben-admin)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/webjs/vue-web-admin)
 
 ## ドキュメント
 
-[ドキュメント](https://doc.vben.pro/)
+[ドキュメント](https://doc.web.pro/)
 
 ## インストールと使用
 
 1. プロジェクトコードを取得
 
 ```bash
-git clone https://github.com/vbenjs/vue-vben-admin.git
+git clone https://github.com/webjs/vue-web-admin.git
 ```
 
 2. 依存関係のインストール
 
 ```bash
-cd vue-vben-admin
+cd vue-web-admin
 npm i -g corepack
 pnpm install
 ```
@@ -82,11 +82,11 @@ pnpm build
 
 ## 変更ログ
 
-[CHANGELOG](https://github.com/vbenjs/vue-vben-admin/releases)
+[CHANGELOG](https://github.com/webjs/vue-web-admin/releases)
 
 ## 貢献方法
 
-ご参加をお待ちしております！[Issueを提出](https://github.com/anncwb/vue-vben-admin/issues/new/choose)するか、Pull Requestを送信してください。
+ご参加をお待ちしております！[Issueを提出](https://github.com/anncwb/vue-web-admin/issues/new/choose)するか、Pull Requestを送信してください。
 
 **Pull Request プロセス：**
 
@@ -128,29 +128,29 @@ pnpm build
 
 ## スター歴史
 
-[![Star History Chart](https://api.star-history.com/svg?repos=vbenjs/vue-vben-admin&type=Date)](https://star-history.com/#vbenjs/vue-vben-admin&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=webjs/vue-web-admin&type=Date)](https://star-history.com/#webjs/vue-web-admin&Date)
 
 ## 寄付
 
 このプロジェクトが役に立つと思われた場合、作者にコーヒーを一杯おごってサポートを示すことができます！
 
-![donate](https://unpkg.com/@vbenjs/static-source@0.1.7/source/sponsor.png)
+![donate](https://unpkg.com/@webjs/static-source@0.1.7/source/sponsor.png)
 
-<a style="display: block;width: 100px;height: 50px;line-height: 50px; color: #fff;text-align: center; background: #408aed;border-radius: 4px;" href="https://www.paypal.com/paypalme/cvvben">Paypal Me</a>
+<a style="display: block;width: 100px;height: 50px;line-height: 50px; color: #fff;text-align: center; background: #408aed;border-radius: 4px;" href="https://www.paypal.com/paypalme/cvweb">Paypal Me</a>
 
 ## 貢献者
 
-<a href="https://openomy.app/github/vbenjs/vue-vben-admin" target="_blank" style="display: block; width: 100%;" align="center">
-  <img src="https://openomy.app/svg?repo=vbenjs/vue-vben-admin&chart=bubble&latestMonth=3" target="_blank" alt="Contribution Leaderboard" style="display: block; width: 100%;" />
+<a href="https://openomy.app/github/webjs/vue-web-admin" target="_blank" style="display: block; width: 100%;" align="center">
+  <img src="https://openomy.app/svg?repo=webjs/vue-web-admin&chart=bubble&latestMonth=3" target="_blank" alt="Contribution Leaderboard" style="display: block; width: 100%;" />
  </a>
 
-<a href="https://github.com/vbenjs/vue-vben-admin/graphs/contributors">
-  <img alt="Contributors" src="https://contrib.rocks/image?repo=vbenjs/vue-vben-admin" />
+<a href="https://github.com/webjs/vue-web-admin/graphs/contributors">
+  <img alt="Contributors" src="https://contrib.rocks/image?repo=webjs/vue-web-admin" />
 </a>
 
 ## Discord
 
-- [Github Discussions](https://github.com/anncwb/vue-vben-admin/discussions)
+- [Github Discussions](https://github.com/anncwb/vue-web-admin/discussions)
 
 ## ライセンス
 

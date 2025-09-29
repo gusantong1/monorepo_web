@@ -13,7 +13,7 @@ export const MOCK_USERS: UserInfo[] = [
     password: '123456',
     realName: 'Vben',
     roles: ['super'],
-    username: 'vben',
+    username: 'web',
   },
   {
     id: 1,
@@ -37,7 +37,7 @@ export const MOCK_CODES = [
   // super
   {
     codes: ['AC_100100', 'AC_100110', 'AC_100120', 'AC_100010'],
-    username: 'vben',
+    username: 'web',
   },
   {
     // admin
@@ -174,7 +174,7 @@ const createDemosMenus = (role: 'admin' | 'super' | 'user') => {
 export const MOCK_MENUS = [
   {
     menus: [...dashboardMenus, ...createDemosMenus('super')],
-    username: 'vben',
+    username: 'web',
   },
   {
     menus: [...dashboardMenus, ...createDemosMenus('admin')],
@@ -310,11 +310,11 @@ export const MOCK_MENU_LIST = [
     meta: {
       badgeType: 'dot',
       order: 9998,
-      title: 'demos.vben.title',
+      title: 'demos.web.title',
       icon: 'carbon:data-center',
     },
     name: 'Project',
-    path: '/vben-admin',
+    path: '/web-admin',
     type: 'catalog',
     status: 1,
     children: [
@@ -322,27 +322,27 @@ export const MOCK_MENU_LIST = [
         id: 901,
         pid: 9,
         name: 'VbenDocument',
-        path: '/vben-admin/document',
+        path: '/web-admin/document',
         component: 'IFrameView',
         type: 'embedded',
         status: 1,
         meta: {
           icon: 'carbon:book',
-          iframeSrc: 'https://doc.vben.pro',
-          title: 'demos.vben.document',
+          iframeSrc: 'https://doc.web.pro',
+          title: 'demos.web.document',
         },
       },
       {
         id: 902,
         pid: 9,
         name: 'VbenGithub',
-        path: '/vben-admin/github',
+        path: '/web-admin/github',
         component: 'IFrameView',
         type: 'link',
         status: 1,
         meta: {
           icon: 'carbon:logo-github',
-          link: 'https://github.com/vbenjs/vue-vben-admin',
+          link: 'https://github.com/webjs/vue-web-admin',
           title: 'Github',
         },
       },
@@ -350,15 +350,15 @@ export const MOCK_MENU_LIST = [
         id: 903,
         pid: 9,
         name: 'VbenAntdv',
-        path: '/vben-admin/antdv',
+        path: '/web-admin/antdv',
         component: 'IFrameView',
         type: 'link',
         status: 0,
         meta: {
           icon: 'carbon:hexagon-vertical-solid',
           badgeType: 'dot',
-          link: 'https://ant.vben.pro',
-          title: 'demos.vben.antdv',
+          link: 'https://ant.web.pro',
+          title: 'demos.web.antdv',
         },
       },
     ],
@@ -371,7 +371,7 @@ export const MOCK_MENU_LIST = [
     meta: {
       icon: 'lucide:copyright',
       order: 9999,
-      title: 'demos.vben.about',
+      title: 'demos.web.about',
     },
     name: 'About',
     path: '/about',

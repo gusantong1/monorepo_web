@@ -1,12 +1,12 @@
 {
-  "name": "@vben/tailwind-config",
+  "name": "@web/tailwind-config",
   "version": "5.5.9",
   "private": true,
-  "homepage": "https://github.com/vbenjs/vue-vben-admin",
-  "bugs": "https://github.com/vbenjs/vue-vben-admin/issues",
+  "homepage": "https://github.com/webjs/vue-web-admin",
+  "bugs": "https://github.com/webjs/vue-web-admin/issues",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vbenjs/vue-vben-admin.git",
+    "url": "git+https://github.com/webjs/vue-web-admin.git",
     "directory": "internal/tailwind-config"
   },
   "license": "MIT",

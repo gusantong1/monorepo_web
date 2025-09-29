@@ -1,5 +1,5 @@
-// export { default } from '@vben/tailwind-config';
-import tailwindConfig from '@vben/tailwind-config';
+// export { default } from '@web/tailwind-config';
+import tailwindConfig from '@web/tailwind-config';
 
 import primeui from 'tailwindcss-primeui';
 

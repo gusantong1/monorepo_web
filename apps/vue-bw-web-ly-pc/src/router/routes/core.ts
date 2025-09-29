@@ -1,24 +1,12 @@
 import type { RouteRecordRaw } from 'vue-router';
 
-import { LOGIN_PATH } from '@vben/constants';
-import { preferences } from '@vben/preferences';
+import { LOGIN_PATH } from '@web/constants';
+import { preferences } from '@web/preferences';
 
 import { $t } from '#/locales';
 
-const BasicLayout = () => import('#/layouts/basic.vue');
-const AuthPageLayout = () => import('#/layouts/auth.vue');
-/** 全局404页面 */
-const fallbackNotFoundRoute: RouteRecordRaw = {
-  component: () => import('#/views/_core/fallback/not-found.vue'),
-  meta: {
-    hideInBreadcrumb: true,
-    hideInMenu: true,
-    hideInTab: true,
-    title: '404',
-  },
-  name: 'FallbackNotFound',
-  path: '/:path(.*)*',
-};
+// const BasicLayout = () => import('#/layouts/basic.vue');
+// const AuthPageLayout = () => import('#/layouts/auth.vue');
 
 /** 基本路由，这些路由是必须存在的 */
 const coreRoutes: RouteRecordRaw[] = [
@@ -28,7 +16,7 @@ const coreRoutes: RouteRecordRaw[] = [
    * 此路由必须存在，且不应修改
    */
   {
-    component: BasicLayout,
+    // component: BasicLayout,
     meta: {
       hideInBreadcrumb: true,
       title: 'Root',
@@ -39,7 +27,7 @@ const coreRoutes: RouteRecordRaw[] = [
     children: [],
   },
   {
-    component: AuthPageLayout,
+    // component: AuthPageLayout,
     meta: {
       hideInTab: true,
       title: 'Authentication',
@@ -51,7 +39,7 @@ const coreRoutes: RouteRecordRaw[] = [
       {
         name: 'Login',
         path: 'login',
-        component: () => import('#/views/_core/authentication/login.vue'),
+        component: () => {},
         meta: {
           title: $t('page.auth.login'),
         },
@@ -59,7 +47,7 @@ const coreRoutes: RouteRecordRaw[] = [
       {
         name: 'CodeLogin',
         path: 'code-login',
-        component: () => import('#/views/_core/authentication/code-login.vue'),
+        component: () =>  {},
         meta: {
           title: $t('page.auth.codeLogin'),
         },
@@ -67,8 +55,7 @@ const coreRoutes: RouteRecordRaw[] = [
       {
         name: 'QrCodeLogin',
         path: 'qrcode-login',
-        component: () =>
-          import('#/views/_core/authentication/qrcode-login.vue'),
+        component: () =>{},
         meta: {
           title: $t('page.auth.qrcodeLogin'),
         },
@@ -76,8 +63,7 @@ const coreRoutes: RouteRecordRaw[] = [
       {
         name: 'ForgetPassword',
         path: 'forget-password',
-        component: () =>
-          import('#/views/_core/authentication/forget-password.vue'),
+        component: () =>{},
         meta: {
           title: $t('page.auth.forgetPassword'),
         },
@@ -85,7 +71,7 @@ const coreRoutes: RouteRecordRaw[] = [
       {
         name: 'Register',
         path: 'register',
-        component: () => import('#/views/_core/authentication/register.vue'),
+        component: () => {},
         meta: {
           title: $t('page.auth.register'),
         },
@@ -94,4 +80,4 @@ const coreRoutes: RouteRecordRaw[] = [
   },
 ];
 
-export { coreRoutes, fallbackNotFoundRoute };
+export { coreRoutes };

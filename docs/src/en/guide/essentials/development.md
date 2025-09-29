@@ -53,15 +53,15 @@ The execution command is: `pnpm run [script]` or `npm run [script]`.
     // Build a local Docker image
     "build:docker": "./build-local-docker-image.sh",
     // Build the web-antd application separately
-    "build:antd": "pnpm run build --filter=@vben/web-antd",
+    "build:antd": "pnpm run build --filter=@web/web-antd",
     // Build the documentation separately
-    "build:docs": "pnpm run build --filter=@vben/docs",
+    "build:docs": "pnpm run build --filter=@web/docs",
     // Build the web-ele application separately
-    "build:ele": "pnpm run build --filter=@vben/web-ele",
+    "build:ele": "pnpm run build --filter=@web/web-ele",
     // Build the web-naive application separately
-    "build:naive": "pnpm run build --filter=@vben/naive",
+    "build:naive": "pnpm run build --filter=@web/naive",
     // Build the playground application separately
-    "build:play": "pnpm run build --filter=@vben/playground",
+    "build:play": "pnpm run build --filter=@web/playground",
     // Changeset version management
     "changeset": "pnpm exec changeset",
     // Check for various issues in the project
@@ -81,15 +81,15 @@ The execution command is: `pnpm run [script]` or `npm run [script]`.
     // Start the project (by default, the dev scripts of all packages in the entire repository will run)
     "dev": "turbo-run dev",
     // Start the web-antd application
-    "dev:antd": "pnpm -F @vben/web-antd run dev",
+    "dev:antd": "pnpm -F @web/web-antd run dev",
     // Start the documentation
-    "dev:docs": "pnpm -F @vben/docs run dev",
+    "dev:docs": "pnpm -F @web/docs run dev",
     // Start the web-ele application
-    "dev:ele": "pnpm -F @vben/web-ele run dev",
+    "dev:ele": "pnpm -F @web/web-ele run dev",
     // Start the web-naive application
-    "dev:naive": "pnpm -F @vben/web-naive run dev",
+    "dev:naive": "pnpm -F @web/web-naive run dev",
     // Start the playground application
-    "dev:play": "pnpm -F @vben/playground run dev",
+    "dev:play": "pnpm -F @web/playground run dev",
     // Format code
     "format": "vsh lint --format",
     // Lint code
@@ -156,7 +156,7 @@ In actual business development, multiple environments are usually distinguished 
 
 At this point, you can modify three files and add corresponding script configurations to distinguish between production environments.
 
-Take the addition of the test environment `test` to `@vben/web-antd` as an example:
+Take the addition of the test environment `test` to `@web/web-antd` as an example:
 
 - `apps\web-antd\package.json`
 
@@ -179,8 +179,8 @@ Add the command `"build:test"` and change the original `"build"` to `"build:prod
 "scripts": {
     "build": "cross-env NODE_OPTIONS=--max-old-space-size=8192 turbo build",
     "build:analyze": "turbo build:analyze",
-    "build:antd": "pnpm run build --filter=@vben/web-antd",
-    "build-test:antd": "pnpm run build --filter=@vben/web-antd build:test",
+    "build:antd": "pnpm run build --filter=@web/web-antd",
+    "build-test:antd": "pnpm run build --filter=@web/web-antd build:test",
 
     ······
 }
@@ -203,11 +203,11 @@ Add the command to build the test environment in the root directory `package.jso
     },
 
     "build-test:antd": {
-      "dependsOn": ["@vben/web-antd#build:test"],
+      "dependsOn": ["@web/web-antd#build:test"],
       "outputs": ["dist/**"]
     },
 
-    "@vben/web-antd#build:test": {
+    "@web/web-antd#build:test": {
       "dependsOn": ["^build"],
       "outputs": ["dist/**"]
     },

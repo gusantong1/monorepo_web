@@ -56,16 +56,16 @@ pnpm install
 ```json
 {
   "scripts": {
-    "build:antd": "pnpm run build --filter=@vben/web-antd",
-    "build:docs": "pnpm run build --filter=@vben/docs",
-    "build:ele": "pnpm run build --filter=@vben/web-ele",
-    "build:naive": "pnpm run build --filter=@vben/web-naive",
-    "build:play": "pnpm run build --filter=@vben/playground",
-    "dev:antd": "pnpm -F @vben/web-antd run dev",
-    "dev:docs": "pnpm -F @vben/docs run dev",
-    "dev:ele": "pnpm -F @vben/web-ele run dev",
-    "dev:play": "pnpm -F @vben/playground run dev",
-    "dev:naive": "pnpm -F @vben/web-naive run dev"
+    "build:antd": "pnpm run build --filter=@web/web-antd",
+    "build:docs": "pnpm run build --filter=@web/docs",
+    "build:ele": "pnpm run build --filter=@web/web-ele",
+    "build:naive": "pnpm run build --filter=@web/web-naive",
+    "build:play": "pnpm run build --filter=@web/playground",
+    "dev:antd": "pnpm -F @web/web-antd run dev",
+    "dev:docs": "pnpm -F @web/docs run dev",
+    "dev:ele": "pnpm -F @web/web-ele run dev",
+    "dev:play": "pnpm -F @web/playground run dev",
+    "dev:naive": "pnpm -F @web/web-naive run dev"
   }
 }
 ```
@@ -87,7 +87,7 @@ pnpm install
 
 - 在应用的 `src/router/routes` 文件中，你可以删除不需要的路由。其中 `core` 文件夹内，如果只需要登录和忘记密码，你可以删除其他路由，如忘记密码、注册等。路由删除后，你可以删除对应的页面文件，在 `src/views/_core` 文件夹中。
 
-- 在应用的 `src/router/routes` 文件中，你可以按需求删除不需要的路由，如`demos`、`vben` 目录等。路由删除后，你可以删除对应的页面文件，在 `src/views` 文件夹中。
+- 在应用的 `src/router/routes` 文件中，你可以按需求删除不需要的路由，如`demos`、`web` 目录等。路由删除后，你可以删除对应的页面文件，在 `src/views` 文件夹中。
 
 ### 删除不需要的组件
 

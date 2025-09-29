@@ -4,11 +4,11 @@ import type {
   AlertDialogContentProps,
 } from 'radix-vue';
 
-import type { ClassType } from '@vben-core/typings';
+import type { ClassType } from '@web-core/typings';
 
 import { computed, ref } from 'vue';
 
-import { cn } from '@vben-core/shared/utils';
+import { cn } from '@web-core/shared/utils';
 
 import {
   AlertDialogContent,

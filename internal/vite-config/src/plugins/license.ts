@@ -7,7 +7,7 @@ import type { PluginOption } from 'vite';
 
 import { EOL } from 'node:os';
 
-import { dateUtil, readPackageJSON } from '@vben/node-utils';
+import { dateUtil, readPackageJSON } from '@web/node-utils';
 
 /**
  * 用于注入版权信息
@@ -32,13 +32,13 @@ async function viteLicensePlugin(
         const copyrightText = `/*!
   * Vben Admin
   * Version: ${version}
-  * Author: vben
+  * Author: web
   * Copyright (C) 2024 Vben
   * License: MIT License
   * Description: ${description}
   * Date Created: ${date}
   * Homepage: ${homepage}
-  * Contact: ann.vben@gmail.com
+  * Contact: ann.web@gmail.com
 */
               `.trim();
 

@@ -1,12 +1,12 @@
 {
-  "name": "@vben-core/typings",
+  "name": "@web-core/typings",
   "version": "5.5.9",
-  "homepage": "https://github.com/vbenjs/vue-vben-admin",
-  "bugs": "https://github.com/vbenjs/vue-vben-admin/issues",
+  "homepage": "https://github.com/webjs/vue-web-admin",
+  "bugs": "https://github.com/webjs/vue-web-admin/issues",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vbenjs/vue-vben-admin.git",
-    "directory": "packages/@vben-core/base/typings"
+    "url": "git+https://github.com/webjs/vue-web-admin.git",
+    "directory": "packages/@web-core/base/typings"
   },
   "license": "MIT",
   "type": "module",

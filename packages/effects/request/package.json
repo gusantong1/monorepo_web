@@ -1,11 +1,11 @@
 {
-  "name": "@vben/request",
+  "name": "@web/request",
   "version": "5.5.9",
-  "homepage": "https://github.com/vbenjs/vue-vben-admin",
-  "bugs": "https://github.com/vbenjs/vue-vben-admin/issues",
+  "homepage": "https://github.com/webjs/vue-web-admin",
+  "bugs": "https://github.com/webjs/vue-web-admin/issues",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vbenjs/vue-vben-admin.git",
+    "url": "git+https://github.com/webjs/vue-web-admin.git",
     "directory": "packages/effects/request"
   },
   "license": "MIT",
@@ -20,8 +20,8 @@
     }
   },
   "dependencies": {
-    "@vben/locales": "workspace:*",
-    "@vben/utils": "workspace:*",
+    "@web/locales": "workspace:*",
+    "@web/utils": "workspace:*",
     "axios": "catalog:",
     "qs": "catalog:"
   },

@@ -8,18 +8,18 @@ hero:
   text: Enterprise-Level Management System Framework
   tagline: Fully Upgraded, Ready to Use, Simple and Efficient
   image:
-    src: https://unpkg.com/@vbenjs/static-source@0.1.7/source/logo-v1.webp
+    src: https://unpkg.com/@webjs/static-source@0.1.7/source/logo-v1.webp
     alt: Vben Admin
   actions:
     - theme: brand
       text: Get Started ->
-      link: /en/guide/introduction/vben
+      link: /en/guide/introduction/web
     - theme: alt
       text: Live Preview
-      link: https://www.vben.pro
+      link: https://www.web.pro
     - theme: alt
       text: View on GitHub
-      link: https://github.com/vbenjs/vue-vben-admin
+      link: https://github.com/webjs/vue-web-admin
 
 features:
   - icon: 🚀

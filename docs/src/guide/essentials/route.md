@@ -10,7 +10,7 @@ outline: deep
 
 路由分为核心路由、静态路由和动态路由，核心路由是框架内置的路由，包含了根路由、登录路由、404路由等；静态路由是在项目启动时就已经确定的路由；动态路由一般是在用户登录后，根据用户的权限动态生成的路由。
 
-静态路由和动态路由都会走权限控制，可以通过配置路由的 `meta` 属性中的 `authority` 字段来控制权限，可以参考[路由权限控制](https://github.com/vbenjs/vue-vben-admin/blob/main/playground/src/router/routes/modules/demos.ts)。
+静态路由和动态路由都会走权限控制，可以通过配置路由的 `meta` 属性中的 `authority` 字段来控制权限，可以参考[路由权限控制](https://github.com/webjs/vue-web-admin/blob/main/playground/src/router/routes/modules/demos.ts)。
 
 ### 核心路由
 
@@ -60,7 +60,7 @@ const externalRoutes: RouteRecordRaw[] = mergeRouteModules(externalRouteFiles); 
 ```ts
 import type { RouteRecordRaw } from 'vue-router';
 
-import { VBEN_LOGO_URL } from '@vben/constants';
+import { VBEN_LOGO_URL } from '@web/constants';
 
 import { $t } from '#/locales';
 
@@ -71,21 +71,21 @@ const routes: RouteRecordRaw[] = [
       badgeVariants: 'destructive',
       icon: VBEN_LOGO_URL,
       order: 9999,
-      title: $t('page.vben.title'),
+      title: $t('page.web.title'),
     },
     name: 'VbenProject',
-    path: '/vben-admin',
-    redirect: '/vben-admin/about',
+    path: '/web-admin',
+    redirect: '/web-admin/about',
     children: [
       {
         name: 'VbenAbout',
-        path: '/vben-admin/about',
+        path: '/web-admin/about',
         component: () => import('#/views/_core/about/index.vue'),
         meta: {
           badgeType: 'dot',
           badgeVariants: 'destructive',
           icon: 'lucide:copyright',
-          title: $t('page.vben.about'),
+          title: $t('page.web.about'),
         },
       },
     ],
@@ -231,7 +231,7 @@ export default routes;
 ```ts
 import type { RouteRecordRaw } from 'vue-router';
 
-import { VBEN_LOGO_URL } from '@vben/constants';
+import { VBEN_LOGO_URL } from '@web/constants';
 
 import { $t } from '#/locales';
 
@@ -605,7 +605,7 @@ _注意:_ 排序仅针对一级菜单有效，二级菜单的排序需要在对�
 
 ```vue
 <script setup lang="ts">
-import { useRefresh } from '@vben/hooks';
+import { useRefresh } from '@web/hooks';
 
 const { refresh } = useRefresh();
 

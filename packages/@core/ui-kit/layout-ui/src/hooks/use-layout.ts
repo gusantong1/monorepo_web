@@ -1,6 +1,6 @@
-import type { LayoutType } from '@vben-core/typings';
+import type { LayoutType } from '@web-core/typings';
 
-import type { VbenLayoutProps } from '../vben-layout';
+import type { VbenLayoutProps } from '../web-layout';
 
 import { computed } from 'vue';
 

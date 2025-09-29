@@ -1,8 +1,8 @@
-import type { Language } from 'element-plus/es/locale';
+// import type { Language } from 'element-plus/es/locale';
 
 import type { App } from 'vue';
 
-import type { LocaleSetupOptions, SupportedLanguagesType } from '@vben/locales';
+import type { LocaleSetupOptions, SupportedLanguagesType } from '@web/locales';
 
 import { ref } from 'vue';
 
@@ -10,14 +10,14 @@ import {
   $t,
   setupI18n as coreSetup,
   loadLocalesMapFromDir,
-} from '@vben/locales';
-import { preferences } from '@vben/preferences';
+} from '@web/locales';
+import { preferences } from '@web/preferences';
 
 import dayjs from 'dayjs';
-import enLocale from 'element-plus/es/locale/lang/en';
-import defaultLocale from 'element-plus/es/locale/lang/zh-cn';
+// import enLocale from 'element-plus/es/locale/lang/en';
+// import defaultLocale from 'element-plus/es/locale/lang/zh-cn';
 
-const elementLocale = ref<Language>(defaultLocale);
+// const elementLocale = ref<Language>(defaultLocale);
 
 const modules = import.meta.glob('./langs/**/*.json');
 
@@ -78,16 +78,16 @@ async function loadDayjsLocale(lang: SupportedLanguagesType) {
  * @param lang
  */
 async function loadElementLocale(lang: SupportedLanguagesType) {
-  switch (lang) {
-    case 'en-US': {
-      elementLocale.value = enLocale;
-      break;
-    }
-    case 'zh-CN': {
-      elementLocale.value = defaultLocale;
-      break;
-    }
-  }
+  // switch (lang) {
+  //   case 'en-US': {
+  //     elementLocale.value = enLocale;
+  //     break;
+  //   }
+  //   case 'zh-CN': {
+  //     elementLocale.value = defaultLocale;
+  //     break;
+  //   }
+  // }
 }
 
 async function setupI18n(app: App, options: LocaleSetupOptions = {}) {
@@ -99,4 +99,4 @@ async function setupI18n(app: App, options: LocaleSetupOptions = {}) {
   });
 }
 
-export { $t, elementLocale, setupI18n };
+export { $t, setupI18n };

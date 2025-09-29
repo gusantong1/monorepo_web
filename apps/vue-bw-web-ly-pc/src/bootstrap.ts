@@ -1,14 +1,13 @@
 import { createApp, watchEffect } from 'vue';
 
-import { registerAccessDirective } from '@vben/access';
-import { registerLoadingDirective } from '@vben/common-ui';
-import { preferences } from '@vben/preferences';
-import { initStores } from '@vben/stores';
-import '@vben/styles';
-import '@vben/styles/ele';
+import { registerLoadingDirective } from '@web/common-ui';
+import { preferences } from '@web/preferences';
+import { initStores } from '@web/stores';
+import '@web/styles';
+import '@web/styles/ele';
 
 import { useTitle } from '@vueuse/core';
-import { ElLoading } from 'element-plus';
+// import { ElLoading } from 'element-plus';
 import PrimeVue from 'primevue/config';
 
 import { $t, setupI18n } from '#/locales';
@@ -28,7 +27,7 @@ async function bootstrap(namespace: string) {
   const app = createApp(App);
 
   // 注册Element Plus提供的v-loading指令
-  app.directive('loading', ElLoading.directive);
+  // app.directive('loading', ElLoading.directive);
 
   // 注册Vben提供的v-loading和v-spinning指令
   registerLoadingDirective(app, {
@@ -42,18 +41,11 @@ async function bootstrap(namespace: string) {
   // 配置 pinia-tore
   await initStores(app, { namespace });
 
-  // 安装权限指令
-  registerAccessDirective(app);
-
-  // 初始化 tippy
-  const { initTippy } = await import('@vben/common-ui/es/tippy');
-  initTippy(app);
-
   // 配置路由及路由守卫
   app.use(router);
 
   // 配置Motion插件
-  const { MotionPlugin } = await import('@vben/plugins/motion');
+  const { MotionPlugin } = await import('@web/plugins/motion');
   app.use(MotionPlugin);
   // 单独集成PrimeVue
   app.use(PrimeVue);

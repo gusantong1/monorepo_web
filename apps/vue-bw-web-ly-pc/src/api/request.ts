@@ -1,19 +1,19 @@
 /**
  * 该文件可自行根据业务逻辑进行调整
  */
-import type { RequestClientOptions } from '@vben/request';
+import type { RequestClientOptions } from '@web/request';
 
-import { useAppConfig } from '@vben/hooks';
-import { preferences } from '@vben/preferences';
+import { useAppConfig } from '@web/hooks';
+import { preferences } from '@web/preferences';
 import {
   authenticateResponseInterceptor,
   defaultResponseInterceptor,
   errorMessageResponseInterceptor,
   RequestClient,
-} from '@vben/request';
-import { useAccessStore } from '@vben/stores';
+} from '@web/request';
+import { useAccessStore } from '@web/stores';
 
-import { ElMessage } from 'element-plus';
+// import { ElMessage } from 'element-plus';
 
 import { useAuthStore } from '#/store';
 
@@ -99,7 +99,7 @@ function createRequestClient(baseURL: string, options?: RequestClientOptions) {
       const responseData = error?.response?.data ?? {};
       const errorMessage = responseData?.error ?? responseData?.message ?? '';
       // 如果没有错误信息，则会根据状态码进行提示
-      ElMessage.error(errorMessage || msg);
+      // ElMessage.error(errorMessage || msg);
     }),
   );
 
