@@ -136,8 +136,8 @@ catalogs:
       specifier: ^13.4.0
       version: 13.4.0
     '@vueuse/integrations':
-      specifier: ^13.4.0
-      version: 13.4.0
+      specifier: ^13.9.0
+      version: 13.9.0
     '@vueuse/motion':
       specifier: ^3.0.3
       version: 3.0.3
@@ -628,6 +628,73 @@ importers:
         version: 1.15.3
 
   apps/vue-bw-web-ly-pc:
+    dependencies:
+      '@vueuse/core':
+        specifier: 'catalog:'
+        version: 13.4.0(vue@3.5.17(typescript@5.8.3))
+      '@web/access':
+        specifier: workspace:*
+        version: link:../../packages/effects/access
+      '@web/common-ui':
+        specifier: workspace:*
+        version: link:../../packages/effects/common-ui
+      '@web/constants':
+        specifier: workspace:*
+        version: link:../../packages/constants
+      '@web/hooks':
+        specifier: workspace:*
+        version: link:../../packages/effects/hooks
+      '@web/layouts':
+        specifier: workspace:*
+        version: link:../../packages/effects/layouts
+      '@web/locales':
+        specifier: workspace:*
+        version: link:../../packages/locales
+      '@web/plugins':
+        specifier: workspace:*
+        version: link:../../packages/effects/plugins
+      '@web/preferences':
+        specifier: workspace:*
+        version: link:../../packages/preferences
+      '@web/request':
+        specifier: workspace:*
+        version: link:../../packages/effects/request
+      '@web/stores':
+        specifier: workspace:*
+        version: link:../../packages/stores
+      '@web/styles':
+        specifier: workspace:*
+        version: link:../../packages/styles
+      '@web/types':
+        specifier: workspace:*
+        version: link:../../packages/types
+      '@web/utils':
+        specifier: workspace:*
+        version: link:../../packages/utils
+      dayjs:
+        specifier: 'catalog:'
+        version: 1.11.13
+      pinia:
+        specifier: ^3.0.3
+        version: 3.0.3(typescript@5.8.3)(vue@3.5.17(typescript@5.8.3))
+      primevue:
+        specifier: 'catalog:'
+        version: 4.3.9(vue@3.5.17(typescript@5.8.3))
+      tailwindcss-primeui:
+        specifier: 'catalog:'
+        version: 0.6.1(tailwindcss@3.4.17)
+      vue:
+        specifier: ^3.5.17
+        version: 3.5.17(typescript@5.8.3)
+      vue-router:
+        specifier: 'catalog:'
+        version: 4.5.1(vue@3.5.17(typescript@5.8.3))
+    devDependencies:
+      unplugin-element-plus:
+        specifier: 'catalog:'
+        version: 0.10.0
+
+  apps/vue-bw-web-ly-pc222:
     dependencies:
       '@vueuse/core':
         specifier: 'catalog:'
@@ -1327,7 +1394,7 @@ importers:
         version: 13.4.0(vue@3.5.17(typescript@5.8.3))
       '@vueuse/integrations':
         specifier: 'catalog:'
-        version: 13.4.0(async-validator@4.2.5)(axios@1.10.0)(focus-trap@7.6.4)(jwt-decode@4.0.0)(nprogress@0.2.0)(qrcode@1.5.4)(sortablejs@1.15.6)(vue@3.5.17(typescript@5.8.3))
+        version: 13.9.0(async-validator@4.2.5)(axios@1.10.0)(focus-trap@7.6.4)(jwt-decode@4.0.0)(nprogress@0.2.0)(qrcode@1.5.4)(sortablejs@1.15.6)(vue@3.5.17(typescript@5.8.3))
       '@web-core/form-ui':
         specifier: workspace:*
         version: link:../../@core/ui-kit/form-ui
@@ -4464,8 +4531,13 @@ packages:
     peerDependencies:
       vue: ^3.5.17
 
-  '@vueuse/integrations@13.4.0':
-    resolution: {integrity: sha512-rwNoE0MNJBUuSzTZcUVrkovtHvpWIySOcC6XpcS33ZarHDNhd9CPvCD4eNl3N0Phz1he1JV0iYULRyPQ5HCbFA==}
+  '@vueuse/core@13.9.0':
+    resolution: {integrity: sha512-ts3regBQyURfCE2BcytLqzm8+MmLlo5Ln/KLoxDVcsZ2gzIwVNnQpQOL/UKV8alUqjSZOlpFZcRNsLRqj+OzyA==}
+    peerDependencies:
+      vue: ^3.5.17
+
+  '@vueuse/integrations@13.9.0':
+    resolution: {integrity: sha512-SDobKBbPIOe0cVL7QxMzGkuUGHvWTdihi9zOrrWaWUgFKe15cwEcwfWmgrcNzjT6kHnNmWuTajPHoIzUjYNYYQ==}
     peerDependencies:
       async-validator: ^4
       axios: ^1
@@ -4478,7 +4550,7 @@ packages:
       nprogress: ^0.2
       qrcode: ^1.5
       sortablejs: ^1
-      universal-cookie: ^7
+      universal-cookie: ^7 || ^8
       vue: ^3.5.17
     peerDependenciesMeta:
       async-validator:
@@ -4512,6 +4584,9 @@ packages:
   '@vueuse/metadata@13.4.0':
     resolution: {integrity: sha512-CPDQ/IgOeWbqItg1c/pS+Ulum63MNbpJ4eecjFJqgD/JUCJ822zLfpw6M9HzSvL6wbzMieOtIAW/H8deQASKHg==}
 
+  '@vueuse/metadata@13.9.0':
+    resolution: {integrity: sha512-1AFRvuiGphfF7yWixZa0KwjYH8ulyjDCC0aFgrGRz8+P4kvDFSdXLVfTk5xAN9wEuD1J6z4/myMoYbnHoX07zg==}
+
   '@vueuse/motion@3.0.3':
     resolution: {integrity: sha512-4B+ITsxCI9cojikvrpaJcLXyq0spj3sdlzXjzesWdMRd99hhtFI6OJ/1JsqwtF73YooLe0hUn/xDR6qCtmn5GQ==}
     peerDependencies:
@@ -4522,6 +4597,11 @@ packages:
 
   '@vueuse/shared@13.4.0':
     resolution: {integrity: sha512-+AxuKbw8R1gYy5T21V5yhadeNM7rJqb4cPaRI9DdGnnNl3uqXh+unvQ3uCaA2DjYLbNr1+l7ht/B4qEsRegX6A==}
+    peerDependencies:
+      vue: ^3.5.17
+
+  '@vueuse/shared@13.9.0':
+    resolution: {integrity: sha512-e89uuTLMh0U5cZ9iDpEI2senqPGfbPRTHM/0AaQkcxnpqjkZqDYP8rpfm7edOz8s+pOCOROEy1PIveSW8+fL5g==}
     peerDependencies:
       vue: ^3.5.17
 
@@ -13551,10 +13631,17 @@ snapshots:
       '@vueuse/shared': 13.4.0(vue@3.5.17(typescript@5.8.3))
       vue: 3.5.17(typescript@5.8.3)
 
-  '@vueuse/integrations@13.4.0(async-validator@4.2.5)(axios@1.10.0)(focus-trap@7.6.4)(jwt-decode@4.0.0)(nprogress@0.2.0)(qrcode@1.5.4)(sortablejs@1.15.6)(vue@3.5.17(typescript@5.8.3))':
+  '@vueuse/core@13.9.0(vue@3.5.17(typescript@5.8.3))':
     dependencies:
-      '@vueuse/core': 13.4.0(vue@3.5.17(typescript@5.8.3))
-      '@vueuse/shared': 13.4.0(vue@3.5.17(typescript@5.8.3))
+      '@types/web-bluetooth': 0.0.21
+      '@vueuse/metadata': 13.9.0
+      '@vueuse/shared': 13.9.0(vue@3.5.17(typescript@5.8.3))
+      vue: 3.5.17(typescript@5.8.3)
+
+  '@vueuse/integrations@13.9.0(async-validator@4.2.5)(axios@1.10.0)(focus-trap@7.6.4)(jwt-decode@4.0.0)(nprogress@0.2.0)(qrcode@1.5.4)(sortablejs@1.15.6)(vue@3.5.17(typescript@5.8.3))':
+    dependencies:
+      '@vueuse/core': 13.9.0(vue@3.5.17(typescript@5.8.3))
+      '@vueuse/shared': 13.9.0(vue@3.5.17(typescript@5.8.3))
       vue: 3.5.17(typescript@5.8.3)
     optionalDependencies:
       async-validator: 4.2.5
@@ -13568,6 +13655,8 @@ snapshots:
   '@vueuse/metadata@10.11.1': {}
 
   '@vueuse/metadata@13.4.0': {}
+
+  '@vueuse/metadata@13.9.0': {}
 
   '@vueuse/motion@3.0.3(magicast@0.3.5)(vue@3.5.17(typescript@5.8.3))':
     dependencies:
@@ -13591,6 +13680,10 @@ snapshots:
       - vue
 
   '@vueuse/shared@13.4.0(vue@3.5.17(typescript@5.8.3))':
+    dependencies:
+      vue: 3.5.17(typescript@5.8.3)
+
+  '@vueuse/shared@13.9.0(vue@3.5.17(typescript@5.8.3))':
     dependencies:
       vue: 3.5.17(typescript@5.8.3)
 
