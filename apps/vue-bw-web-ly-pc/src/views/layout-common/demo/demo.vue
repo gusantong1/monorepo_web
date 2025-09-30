@@ -4,6 +4,7 @@ import { ref } from 'vue';
 import { LangEnum, loadLocaleMessages } from '@web/locales';
 import { ThemeEnum, useThemeStore } from '@web/stores';
 
+import { Calendar } from '@web-core/shadcn-ui';
 // import DatePicker from 'volt/DatePicker.vue';
 
 const themeStore = useThemeStore();
@@ -21,7 +22,7 @@ const chanLange = () => {
   }
 };
 
-const date = ref(null);
+const value = ref<Date | null>(null);
 </script>
 
 <template>
@@ -45,7 +46,11 @@ const date = ref(null);
     <div>
       <div>primevue</div>
       <div class="card flex justify-center">
-        <DatePicker v-model="date" />
+        <Calendar
+          v-model="value"
+          weekday-format="short"
+          class="rounded-md border"
+        />
       </div>
     </div>
   </div>

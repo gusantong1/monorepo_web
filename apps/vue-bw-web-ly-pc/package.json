@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "@vueuse/core": "catalog:",
+    "@web-core/shadcn-ui": "workspace:*",
     "@web/access": "workspace:*",
     "@web/common-ui": "workspace:*",
     "@web/constants": "workspace:*",

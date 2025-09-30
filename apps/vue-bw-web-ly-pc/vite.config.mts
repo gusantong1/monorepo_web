@@ -1,11 +1,6 @@
-import path from 'node:path';
-import { fileURLToPath } from 'node:url';
-
 import { defineConfig } from '@web/vite-config';
 
 export default defineConfig(async () => {
-  const __filename = fileURLToPath(import.meta.url);
-  const __dirname = path.dirname(__filename);
   return {
     application: {},
     vite: {
@@ -20,11 +15,6 @@ export default defineConfig(async () => {
             ws: true,
           },
         },
-      },
-    },
-    resolve: {
-      alias: {
-        '@': path.resolve(__dirname, './src'),
       },
     },
   };
