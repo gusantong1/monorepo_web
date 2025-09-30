@@ -6,6 +6,7 @@ import { addDynamicIconSelectors } from '@iconify/tailwind';
 import { getPackagesSync } from '@manypkg/get-packages';
 import typographyPlugin from '@tailwindcss/typography';
 import animate from 'tailwindcss-animate';
+import primeui from 'tailwindcss-primeui';
 
 import { enterAnimationPlugin } from './plugins/entry';
 
@@ -130,6 +131,7 @@ export default {
     typographyPlugin,
     addDynamicIconSelectors(),
     enterAnimationPlugin,
+    primeui,
   ],
   prefix: '',
   theme: {

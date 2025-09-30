@@ -1,8 +1,9 @@
-// export { default } from '@web/tailwind-config';
-import tailwindConfig from '@web/tailwind-config';
+export { default } from '@web/tailwind-config';
 
-import primeui from 'tailwindcss-primeui';
+// import tailwindConfig from '@web/tailwind-config';
 
-tailwindConfig.plugins.push(primeui);
+// import primeui from 'tailwindcss-primeui';
 
-export default tailwindConfig;
+// tailwindConfig.plugins.push(primeui);
+
+// export default tailwindConfig;

@@ -26,7 +26,6 @@ import {
 } from 'vue';
 
 import { usePriorityValues } from '@web/hooks';
-import { EmptyIcon } from '@web/icons';
 import { $t } from '@web/locales';
 import { usePreferences } from '@web/preferences';
 import {

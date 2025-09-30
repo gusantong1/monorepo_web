@@ -1,0 +1,50 @@
+{
+  "name": "@web-core/primevue-ui",
+  "version": "5.5.9",
+  "#main": "./dist/index.mjs",
+  "#module": "./dist/index.mjs",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "#build": "pnpm unbuild",
+    "#prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "main": "./src/index.ts",
+  "module": "./src/index.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "development": "./src/index.ts",
+      "default": "./src/index.ts",
+      "//default": "./dist/index.mjs"
+    }
+  },
+  "publishConfig": {
+    "exports": {
+      ".": {
+        "default": "./src/index.ts"
+      }
+    }
+  },
+  "dependencies": {
+    "@vueuse/core": "catalog:",
+    "@web-core/composables": "workspace:*",
+    "@web-core/icons": "workspace:*",
+    "@web-core/shared": "workspace:*",
+    "@web-core/typings": "workspace:*",
+    "class-variance-authority": "catalog:",
+    "lucide-vue-next": "catalog:",
+    "primevue": "catalog:",
+    "radix-vue": "catalog:",
+    "tailwind-merge": "catalog:",
+    "tailwindcss-primeui": "catalog:",
+    "vee-validate": "catalog:",
+    "vue": "catalog:"
+  }
+}

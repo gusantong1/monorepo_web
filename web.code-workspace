@@ -104,10 +104,7 @@
       "name": "@web/constants",
       "path": "packages/constants",
     },
-    {
-      "name": "@web/access",
-      "path": "packages/effects/access",
-    },
+
     {
       "name": "@web/common-ui",
       "path": "packages/effects/common-ui",
@@ -128,10 +125,7 @@
       "name": "@web/request",
       "path": "packages/effects/request",
     },
-    {
-      "name": "@web/icons",
-      "path": "packages/icons",
-    },
+
     {
       "name": "@web/locales",
       "path": "packages/locales",

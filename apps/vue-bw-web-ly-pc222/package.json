@@ -27,7 +27,6 @@
   },
   "dependencies": {
     "@vueuse/core": "catalog:",
-    "@web/access": "workspace:*",
     "@web/common-ui": "workspace:*",
     "@web/constants": "workspace:*",
     "@web/hooks": "workspace:*",

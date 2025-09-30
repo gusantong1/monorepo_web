@@ -31,7 +31,6 @@
     "@web-core/tabs-ui": "workspace:*",
     "@web/constants": "workspace:*",
     "@web/hooks": "workspace:*",
-    "@web/icons": "workspace:*",
     "@web/locales": "workspace:*",
     "@web/preferences": "workspace:*",
     "@web/stores": "workspace:*",

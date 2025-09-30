@@ -635,9 +635,6 @@ importers:
       '@web-core/shadcn-ui':
         specifier: workspace:*
         version: link:../../packages/@core/ui-kit/shadcn-ui
-      '@web/access':
-        specifier: workspace:*
-        version: link:../../packages/effects/access
       '@web/common-ui':
         specifier: workspace:*
         version: link:../../packages/effects/common-ui
@@ -683,9 +680,6 @@ importers:
       primevue:
         specifier: 'catalog:'
         version: 4.3.9(vue@3.5.17(typescript@5.8.3))
-      tailwindcss-primeui:
-        specifier: 'catalog:'
-        version: 0.6.1(tailwindcss@3.4.17)
       vue:
         specifier: ^3.5.17
         version: 3.5.17(typescript@5.8.3)
@@ -702,9 +696,6 @@ importers:
       '@vueuse/core':
         specifier: 'catalog:'
         version: 13.4.0(vue@3.5.17(typescript@5.8.3))
-      '@web/access':
-        specifier: workspace:*
-        version: link:../../packages/effects/access
       '@web/common-ui':
         specifier: workspace:*
         version: link:../../packages/effects/common-ui
@@ -990,6 +981,9 @@ importers:
       tailwindcss-animate:
         specifier: 'catalog:'
         version: 1.0.7(tailwindcss@3.4.17)
+      tailwindcss-primeui:
+        specifier: 'catalog:'
+        version: 0.6.1(tailwindcss@3.4.17)
     devDependencies:
       '@types/postcss-import':
         specifier: 'catalog:'
@@ -1312,6 +1306,48 @@ importers:
         specifier: ^3.5.17
         version: 3.5.17(typescript@5.8.3)
 
+  packages/@core/ui-kit/primevue-ui:
+    dependencies:
+      '@vueuse/core':
+        specifier: 'catalog:'
+        version: 13.4.0(vue@3.5.17(typescript@5.8.3))
+      '@web-core/composables':
+        specifier: workspace:*
+        version: link:../../composables
+      '@web-core/icons':
+        specifier: workspace:*
+        version: link:../../base/icons
+      '@web-core/shared':
+        specifier: workspace:*
+        version: link:../../base/shared
+      '@web-core/typings':
+        specifier: workspace:*
+        version: link:../../base/typings
+      class-variance-authority:
+        specifier: 'catalog:'
+        version: 0.7.1
+      lucide-vue-next:
+        specifier: 'catalog:'
+        version: 0.507.0(vue@3.5.17(typescript@5.8.3))
+      primevue:
+        specifier: 'catalog:'
+        version: 4.3.9(vue@3.5.17(typescript@5.8.3))
+      radix-vue:
+        specifier: 'catalog:'
+        version: 1.9.17(vue@3.5.17(typescript@5.8.3))
+      tailwind-merge:
+        specifier: 'catalog:'
+        version: 2.6.0
+      tailwindcss-primeui:
+        specifier: 'catalog:'
+        version: 0.6.1(tailwindcss@3.4.17)
+      vee-validate:
+        specifier: 'catalog:'
+        version: 4.15.1(vue@3.5.17(typescript@5.8.3))
+      vue:
+        specifier: ^3.5.17
+        version: 3.5.17(typescript@5.8.3)
+
   packages/@core/ui-kit/shadcn-ui:
     dependencies:
       '@vueuse/core':
@@ -1372,24 +1408,6 @@ importers:
         specifier: workspace:*
         version: link:../@core/base/shared
 
-  packages/effects/access:
-    dependencies:
-      '@web/preferences':
-        specifier: workspace:*
-        version: link:../../preferences
-      '@web/stores':
-        specifier: workspace:*
-        version: link:../../stores
-      '@web/types':
-        specifier: workspace:*
-        version: link:../../types
-      '@web/utils':
-        specifier: workspace:*
-        version: link:../../utils
-      vue:
-        specifier: ^3.5.17
-        version: 3.5.17(typescript@5.8.3)
-
   packages/effects/common-ui:
     dependencies:
       '@vueuse/core':
@@ -1419,9 +1437,6 @@ importers:
       '@web/hooks':
         specifier: workspace:*
         version: link:../hooks
-      '@web/icons':
-        specifier: workspace:*
-        version: link:../../icons
       '@web/locales':
         specifier: workspace:*
         version: link:../../locales
@@ -1519,9 +1534,6 @@ importers:
       '@web/hooks':
         specifier: workspace:*
         version: link:../hooks
-      '@web/icons':
-        specifier: workspace:*
-        version: link:../../icons
       '@web/locales':
         specifier: workspace:*
         version: link:../../locales
@@ -1564,9 +1576,6 @@ importers:
       '@web/hooks':
         specifier: workspace:*
         version: link:../hooks
-      '@web/icons':
-        specifier: workspace:*
-        version: link:../../icons
       '@web/locales':
         specifier: workspace:*
         version: link:../../locales
@@ -1613,12 +1622,6 @@ importers:
       axios-mock-adapter:
         specifier: 'catalog:'
         version: 2.1.0(axios@1.10.0)
-
-  packages/icons:
-    dependencies:
-      '@web-core/icons':
-        specifier: workspace:*
-        version: link:../@core/base/icons
 
   packages/locales:
     dependencies:
