@@ -1,16 +1,15 @@
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
 import { defineConfig } from '@web/vite-config';
 
-import ElementPlus from 'unplugin-element-plus/vite';
-
 export default defineConfig(async () => {
+  const __filename = fileURLToPath(import.meta.url);
+  const __dirname = path.dirname(__filename);
   return {
     application: {},
     vite: {
-      plugins: [
-        ElementPlus({
-          format: 'esm',
-        }),
-      ],
+      plugins: [],
       server: {
         proxy: {
           '/api': {
@@ -21,6 +20,11 @@ export default defineConfig(async () => {
             ws: true,
           },
         },
+      },
+    },
+    resolve: {
+      alias: {
+        '@': path.resolve(__dirname, './src'),
       },
     },
   };

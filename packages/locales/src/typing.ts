@@ -1,9 +1,9 @@
-export type SupportedLanguagesType = 'en-US' | 'zh-CN';
+import type { LangEnum } from './lang-enum';
 
 export type ImportLocaleFn = () => Promise<{ default: Record<string, string> }>;
 
 export type LoadMessageFn = (
-  lang: SupportedLanguagesType,
+  lang: LangEnum,
 ) => Promise<Record<string, string> | undefined>;
 
 export interface LocaleSetupOptions {
@@ -11,7 +11,7 @@ export interface LocaleSetupOptions {
    * Default language
    * @default zh-CN
    */
-  defaultLocale?: SupportedLanguagesType;
+  defaultLocale?: LangEnum;
   /**
    * Load message function
    * @param lang

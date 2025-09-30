@@ -5,13 +5,14 @@ import type {
   ImportLocaleFn,
   LoadMessageFn,
   LocaleSetupOptions,
-  SupportedLanguagesType,
 } from './typing';
 
 import { unref } from 'vue';
 import { createI18n } from 'vue-i18n';
 
 import { useSimpleLocale } from '@web-core/composables';
+
+import { LangEnum } from './lang-enum';
 
 const i18n = createI18n({
   globalInjection: true,
@@ -100,7 +101,7 @@ function setI18nLanguage(locale: Locale) {
 }
 
 async function setupI18n(app: App, options: LocaleSetupOptions = {}) {
-  const { defaultLocale = 'zh-CN' } = options;
+  const { defaultLocale = LangEnum.ZH_CN } = options;
   // app可以自行扩展一些第三方库和组件库的国际化
   loadMessages = options.loadMessages || (async () => ({}));
   app.use(i18n);
@@ -120,7 +121,7 @@ async function setupI18n(app: App, options: LocaleSetupOptions = {}) {
  * Load locale messages
  * @param lang
  */
-async function loadLocaleMessages(lang: SupportedLanguagesType) {
+async function loadLocaleMessages(lang: LangEnum) {
   if (unref(i18n.global.locale) === lang) {
     return setI18nLanguage(lang);
   }

@@ -12,5 +12,6 @@
   "aliases": {
     "components": "@web-core/shadcn-ui/components",
     "utils": "@web-core/shared/utils"
-  }
+  },
+  "components": []
 }

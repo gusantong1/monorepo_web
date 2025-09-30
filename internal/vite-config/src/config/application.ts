@@ -17,6 +17,7 @@ import { getCommonConfig } from './common';
 function defineApplicationConfig(userConfigPromise?: DefineApplicationOptions) {
   return defineConfig(async (config) => {
     const options = await userConfigPromise?.(config);
+    console.log('options---------------', options);
     const { appTitle, base, port, ...envConfig } = await loadAndConvertEnv();
     const { command, mode } = config;
     const { application = {}, vite = {} } = options || {};

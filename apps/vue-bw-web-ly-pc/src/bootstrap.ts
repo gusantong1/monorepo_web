@@ -15,6 +15,8 @@ import { $t, setupI18n } from '#/locales';
 import App from './app.vue';
 import { router } from './router';
 
+import '#/styles/theme.css';
+
 async function bootstrap(namespace: string) {
   // // 设置弹窗的默认配置
   // setDefaultModalProps({

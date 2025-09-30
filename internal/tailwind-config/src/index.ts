@@ -113,6 +113,8 @@ const customColors = {
     ...createColorsPalette('yellow'),
     foreground: 'hsl(var(--warning-foreground))',
   },
+  'primary-demo': 'var(--primary-demo)',
+  'text-demo': 'var(--text-demo)',
 };
 
 export default {

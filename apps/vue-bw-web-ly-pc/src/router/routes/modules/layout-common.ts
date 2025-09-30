@@ -14,6 +14,7 @@ const layoutCommonRoutes: RouteRecordRaw[] = [
     },
     name: 'layoutCommon',
     path: '/',
+    redirect: '/demo',
     children: [
       {
         meta: {
@@ -22,6 +23,14 @@ const layoutCommonRoutes: RouteRecordRaw[] = [
         name: 'home',
         path: '/home',
         component: () => import('#/views/layout-common/home/home.vue'),
+      },
+      {
+        meta: {
+          title: $t('demos.elementPlus'),
+        },
+        name: 'demo',
+        path: '/demo',
+        component: () => import('#/views/layout-common/demo/demo.vue'),
       },
     ],
   },
