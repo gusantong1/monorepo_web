@@ -44,7 +44,7 @@ const value = ref<Date | null>(null);
     </div>
 
     <div>
-      <div>primevue</div>
+      <div>shadcn</div>
       <div class="card flex justify-center">
         <Calendar
           v-model="value"

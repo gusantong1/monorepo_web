@@ -1,7 +1,4 @@
-import { initPreferences } from '@web/preferences';
 import { unmountGlobalLoading } from '@web/utils';
-
-import { overridesPreferences } from './preferences';
 
 /**
  * 应用初始化完成之后再进行页面加载渲染
@@ -14,10 +11,10 @@ async function initApplication() {
   const namespace = `${import.meta.env.VITE_APP_NAMESPACE}-${appVersion}-${env}`;
   console.log('namespace', namespace);
   // app偏好设置初始化
-  await initPreferences({
-    namespace,
-    overrides: overridesPreferences,
-  });
+  // await initPreferences({
+  //   namespace,
+  //   overrides: overridesPreferences,
+  // });
 
   // 启动应用并挂载
   // vue应用主要逻辑及视图
