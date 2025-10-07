@@ -1,31 +1,15 @@
 import type { RouteRecordRaw } from 'vue-router';
 
 import { LOGIN_PATH } from '@web/constants';
-import { preferences } from '@web/preferences';
 
 import { $t } from '#/locales';
 
+import layoutCommonRoutes from './modules/layout1';
 // const BasicLayout = () => import('#/layouts/basic.vue');
 // const AuthPageLayout = () => import('#/layouts/auth.vue');
 
 /** 基本路由，这些路由是必须存在的 */
 const coreRoutes: RouteRecordRaw[] = [
-  /**
-   * 根路由
-   * 使用基础布局，作为所有页面的父级容器，子级就不必配置BasicLayout。
-   * 此路由必须存在，且不应修改
-   */
-  {
-    // component: BasicLayout,
-    meta: {
-      hideInBreadcrumb: true,
-      title: 'Root',
-    },
-    name: 'Root',
-    path: '/',
-    redirect: preferences.app.defaultHomePath,
-    children: [],
-  },
   {
     // component: AuthPageLayout,
     meta: {
@@ -47,7 +31,7 @@ const coreRoutes: RouteRecordRaw[] = [
       {
         name: 'CodeLogin',
         path: 'code-login',
-        component: () =>  {},
+        component: () => {},
         meta: {
           title: $t('page.auth.codeLogin'),
         },
@@ -55,7 +39,7 @@ const coreRoutes: RouteRecordRaw[] = [
       {
         name: 'QrCodeLogin',
         path: 'qrcode-login',
-        component: () =>{},
+        component: () => {},
         meta: {
           title: $t('page.auth.qrcodeLogin'),
         },
@@ -63,7 +47,7 @@ const coreRoutes: RouteRecordRaw[] = [
       {
         name: 'ForgetPassword',
         path: 'forget-password',
-        component: () =>{},
+        component: () => {},
         meta: {
           title: $t('page.auth.forgetPassword'),
         },
@@ -78,6 +62,10 @@ const coreRoutes: RouteRecordRaw[] = [
       },
     ],
   },
+  /**
+   * @description 通用布局路由
+   */
+  ...layoutCommonRoutes,
 ];
 
 export { coreRoutes };

@@ -1,19 +1,8 @@
 {
   "name": "@web/vue-bw-web-ly-pc222",
   "version": "5.5.9",
-  "homepage": "https://web.pro",
-  "bugs": "https://github.com/webjs/vue-web-admin/issues",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/webjs/vue-web-admin.git",
-    "directory": "apps/web-ele"
-  },
   "license": "MIT",
-  "author": {
-    "name": "web",
-    "email": "ann.web@gmail.com",
-    "url": "https://github.com/anncwb"
-  },
+  "author": "code",
   "type": "module",
   "scripts": {
     "build": "pnpm vite build --mode production",
@@ -27,12 +16,12 @@
   },
   "dependencies": {
     "@vueuse/core": "catalog:",
+    "@web-core/primevue-ui": "workspace:*",
+    "@web-core/shadcn-ui": "workspace:*",
     "@web/common-ui": "workspace:*",
     "@web/constants": "workspace:*",
     "@web/hooks": "workspace:*",
-    "@web/layouts": "workspace:*",
     "@web/locales": "workspace:*",
-    "@web/plugins": "workspace:*",
     "@web/preferences": "workspace:*",
     "@web/request": "workspace:*",
     "@web/stores": "workspace:*",
@@ -42,7 +31,6 @@
     "dayjs": "catalog:",
     "pinia": "catalog:",
     "primevue": "catalog:",
-    "tailwindcss-primeui": "catalog:",
     "vue": "catalog:",
     "vue-router": "catalog:"
   },

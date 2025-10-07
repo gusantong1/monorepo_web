@@ -1,8 +1,8 @@
 {
   "name": "@web-core/popup-ui",
   "version": "5.2.1",
-  "homepage": "https://github.com/webjs/vue-web-admin",
-  "bugs": "https://github.com/webjs/vue-web-admin/issues",
+  
+  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/webjs/vue-web-admin.git",

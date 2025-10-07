@@ -1,6 +1,6 @@
 import { createApp, watchEffect } from 'vue';
 
-import { registerLoadingDirective } from '@web/common-ui';
+// import { registerLoadingDirective } from '@web/common-ui';
 import { preferences } from '@web/preferences';
 import { initStores } from '@web/stores';
 import '@web/styles';
@@ -14,6 +14,8 @@ import { $t, setupI18n } from '#/locales';
 
 import App from './app.vue';
 import { router } from './router';
+
+import '#/styles/theme.css';
 
 async function bootstrap(namespace: string) {
   // // 设置弹窗的默认配置
@@ -30,10 +32,10 @@ async function bootstrap(namespace: string) {
   // app.directive('loading', ElLoading.directive);
 
   // 注册Vben提供的v-loading和v-spinning指令
-  registerLoadingDirective(app, {
-    loading: false, // Vben提供的v-loading指令和Element Plus提供的v-loading指令二选一即可，此处false表示不注册Vben提供的v-loading指令
-    spinning: 'spinning',
-  });
+  // registerLoadingDirective(app, {
+  //   loading: false, // Vben提供的v-loading指令和Element Plus提供的v-loading指令二选一即可，此处false表示不注册Vben提供的v-loading指令
+  //   spinning: 'spinning',
+  // });
 
   // 国际化 i18n 配置
   await setupI18n(app);
@@ -48,7 +50,9 @@ async function bootstrap(namespace: string) {
   const { MotionPlugin } = await import('@web/plugins/motion');
   app.use(MotionPlugin);
   // 单独集成PrimeVue
-  app.use(PrimeVue);
+  app.use(PrimeVue, {
+    unstyled: true,
+  });
 
   // 动态更新标题
   watchEffect(() => {

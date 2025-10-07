@@ -107,23 +107,16 @@
 
     {
       "name": "@web/common-ui",
-      "path": "packages/effects/common-ui",
+      "path": "packages/common-ui",
     },
     {
       "name": "@web/hooks",
-      "path": "packages/effects/hooks",
+      "path": "packages/hooks",
     },
-    {
-      "name": "@web/layouts",
-      "path": "packages/effects/layouts",
-    },
-    {
-      "name": "@web/plugins",
-      "path": "packages/effects/plugins",
-    },
+
     {
       "name": "@web/request",
-      "path": "packages/effects/request",
+      "path": "packages/request",
     },
 
     {

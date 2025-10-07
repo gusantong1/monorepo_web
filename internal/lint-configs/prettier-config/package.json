@@ -2,8 +2,8 @@
   "name": "@web/prettier-config",
   "version": "5.0.0",
   "private": true,
-  "homepage": "https://github.com/webjs/vue-web-admin",
-  "bugs": "https://github.com/webjs/vue-web-admin/issues",
+  
+  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/webjs/vue-web-admin.git",

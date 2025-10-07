@@ -47,10 +47,12 @@ async function bootstrap(namespace: string) {
   app.use(router);
 
   // 配置Motion插件
-  const { MotionPlugin } = await import('@web/plugins/motion');
-  app.use(MotionPlugin);
+  // const { MotionPlugin } = await import('@web/plugins/motion');
+  // app.use(MotionPlugin);
   // 单独集成PrimeVue
-  app.use(PrimeVue);
+  app.use(PrimeVue, {
+    unstyled: true,
+  });
 
   // 动态更新标题
   watchEffect(() => {

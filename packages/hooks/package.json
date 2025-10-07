@@ -1,12 +1,10 @@
 {
-  "name": "@web/stores",
+  "name": "@web/hooks",
   "version": "5.5.9",
-  
-  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/webjs/vue-web-admin.git",
-    "directory": "packages/stores"
+    "directory": "packages/effects/hooks"
   },
   "license": "MIT",
   "type": "module",
@@ -20,13 +18,14 @@
     }
   },
   "dependencies": {
-    "@web-core/preferences": "workspace:*",
-    "@web-core/shared": "workspace:*",
-    "@web-core/typings": "workspace:*",
-    "pinia": "catalog:",
-    "pinia-plugin-persistedstate": "catalog:",
-    "secure-ls": "catalog:",
+    "@vueuse/core": "catalog:",
+    "@web-core/composables": "workspace:*",
+    "@web/preferences": "workspace:*",
+    "@web/stores": "workspace:*",
+    "@web/types": "workspace:*",
+    "@web/utils": "workspace:*",
     "vue": "catalog:",
-    "vue-router": "catalog:"
+    "vue-router": "catalog:",
+    "watermark-js-plus": "catalog:"
   }
 }

@@ -1,12 +1,12 @@
 {
-  "name": "@web/stores",
+  "name": "@web/request",
   "version": "5.5.9",
   
   
   "repository": {
     "type": "git",
     "url": "git+https://github.com/webjs/vue-web-admin.git",
-    "directory": "packages/stores"
+    "directory": "packages/effects/request"
   },
   "license": "MIT",
   "type": "module",
@@ -20,13 +20,13 @@
     }
   },
   "dependencies": {
-    "@web-core/preferences": "workspace:*",
-    "@web-core/shared": "workspace:*",
-    "@web-core/typings": "workspace:*",
-    "pinia": "catalog:",
-    "pinia-plugin-persistedstate": "catalog:",
-    "secure-ls": "catalog:",
-    "vue": "catalog:",
-    "vue-router": "catalog:"
+    "@web/locales": "workspace:*",
+    "@web/utils": "workspace:*",
+    "axios": "catalog:",
+    "qs": "catalog:"
+  },
+  "devDependencies": {
+    "@types/qs": "catalog:",
+    "axios-mock-adapter": "catalog:"
   }
 }

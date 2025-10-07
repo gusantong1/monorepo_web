@@ -1,0 +1,9 @@
+:root {
+  --primary-demo:#0037ff;
+  --text-demo: #f50000;
+}
+
+:root[data-web-theme='light'] {
+  --primary-demo: #b700ff;
+  --text-demo: #00f597;
+}

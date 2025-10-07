@@ -3,8 +3,8 @@
   "version": "5.5.9",
   "#main": "./dist/index.mjs",
   "#module": "./dist/index.mjs",
-  "homepage": "https://github.com/webjs/vue-web-admin",
-  "bugs": "https://github.com/webjs/vue-web-admin/issues",
+  
+  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/webjs/vue-web-admin.git",

@@ -4,7 +4,7 @@ import { LOGIN_PATH } from '@web/constants';
 
 import { $t } from '#/locales';
 
-import layoutCommonRoutes from './modules/layout-common';
+import layoutCommonRoutes from './modules/layout1';
 // const BasicLayout = () => import('#/layouts/basic.vue');
 // const AuthPageLayout = () => import('#/layouts/auth.vue');
 
