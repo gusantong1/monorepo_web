@@ -154,7 +154,6 @@ class RequestClient {
           ? { paramsSerializer: getParamsSerializer(config.paramsSerializer) }
           : {}),
       });
-      console.warn(response, '-----------');
       return response as T;
     } catch (error: any) {
       throw error.response ? error.response.data : error;

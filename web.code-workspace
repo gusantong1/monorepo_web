@@ -106,8 +106,8 @@
     },
 
     {
-      "name": "@web/common-ui",
-      "path": "packages/common-ui",
+      "name": "@web/ui-common",
+      "path": "packages/ui-comon",
     },
     {
       "name": "@web/hooks",

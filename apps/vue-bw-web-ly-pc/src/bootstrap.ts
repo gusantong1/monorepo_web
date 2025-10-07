@@ -1,6 +1,6 @@
 import { createApp, watchEffect } from 'vue';
 
-// import { registerLoadingDirective } from '@web/common-ui';
+// import { registerLoadingDirective } from '@web/ui-common';
 import { preferences } from '@web/preferences';
 import { initStores } from '@web/stores';
 import '@web/styles';

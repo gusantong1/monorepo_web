@@ -626,9 +626,6 @@ importers:
       '@web-core/shadcn-ui':
         specifier: workspace:*
         version: link:../../packages/@core/ui-kit/shadcn-ui
-      '@web/common-ui':
-        specifier: workspace:*
-        version: link:../../packages/common-ui
       '@web/constants':
         specifier: workspace:*
         version: link:../../packages/constants
@@ -653,67 +650,9 @@ importers:
       '@web/types':
         specifier: workspace:*
         version: link:../../packages/types
-      '@web/utils':
+      '@web/ui-common':
         specifier: workspace:*
-        version: link:../../packages/utils
-      dayjs:
-        specifier: 'catalog:'
-        version: 1.11.13
-      pinia:
-        specifier: ^3.0.3
-        version: 3.0.3(typescript@5.8.3)(vue@3.5.17(typescript@5.8.3))
-      primevue:
-        specifier: 'catalog:'
-        version: 4.3.9(vue@3.5.17(typescript@5.8.3))
-      vue:
-        specifier: ^3.5.17
-        version: 3.5.17(typescript@5.8.3)
-      vue-router:
-        specifier: 'catalog:'
-        version: 4.5.1(vue@3.5.17(typescript@5.8.3))
-    devDependencies:
-      unplugin-element-plus:
-        specifier: 'catalog:'
-        version: 0.10.0
-
-  apps/vue-bw-web-ly-pc222:
-    dependencies:
-      '@vueuse/core':
-        specifier: 'catalog:'
-        version: 13.4.0(vue@3.5.17(typescript@5.8.3))
-      '@web-core/primevue-ui':
-        specifier: workspace:*
-        version: link:../../packages/@core/ui-kit/primevue-ui
-      '@web-core/shadcn-ui':
-        specifier: workspace:*
-        version: link:../../packages/@core/ui-kit/shadcn-ui
-      '@web/common-ui':
-        specifier: workspace:*
-        version: link:../../packages/common-ui
-      '@web/constants':
-        specifier: workspace:*
-        version: link:../../packages/constants
-      '@web/hooks':
-        specifier: workspace:*
-        version: link:../../packages/hooks
-      '@web/locales':
-        specifier: workspace:*
-        version: link:../../packages/locales
-      '@web/preferences':
-        specifier: workspace:*
-        version: link:../../packages/preferences
-      '@web/request':
-        specifier: workspace:*
-        version: link:../../packages/request
-      '@web/stores':
-        specifier: workspace:*
-        version: link:../../packages/stores
-      '@web/styles':
-        specifier: workspace:*
-        version: link:../../packages/styles
-      '@web/types':
-        specifier: workspace:*
-        version: link:../../packages/types
+        version: link:../../packages/ui-common
       '@web/utils':
         specifier: workspace:*
         version: link:../../packages/utils
@@ -1384,66 +1323,41 @@ importers:
         specifier: ^3.5.17
         version: 3.5.17(typescript@5.8.3)
 
-  packages/common-ui:
+  packages/api-sdk:
     dependencies:
       '@vueuse/core':
         specifier: 'catalog:'
         version: 13.4.0(vue@3.5.17(typescript@5.8.3))
-      '@vueuse/integrations':
-        specifier: 'catalog:'
-        version: 13.4.0(async-validator@4.2.5)(axios@1.10.0)(focus-trap@7.6.4)(jwt-decode@4.0.0)(nprogress@0.2.0)(qrcode@1.5.4)(sortablejs@1.15.6)(vue@3.5.17(typescript@5.8.3))
-      '@web-core/form-ui':
+      '@web-core/composables':
         specifier: workspace:*
-        version: link:../@core/ui-kit/form-ui
-      '@web-core/popup-ui':
-        specifier: workspace:*
-        version: link:../@core/ui-kit/popup-ui
-      '@web-core/preferences':
-        specifier: workspace:*
-        version: link:../@core/preferences
-      '@web-core/shadcn-ui':
-        specifier: workspace:*
-        version: link:../@core/ui-kit/shadcn-ui
-      '@web-core/shared':
-        specifier: workspace:*
-        version: link:../@core/base/shared
-      '@web/constants':
-        specifier: workspace:*
-        version: link:../constants
+        version: link:../@core/composables
       '@web/hooks':
         specifier: workspace:*
         version: link:../hooks
-      '@web/locales':
+      '@web/preferences':
         specifier: workspace:*
-        version: link:../locales
+        version: link:../preferences
+      '@web/request':
+        specifier: workspace:*
+        version: link:../request
+      '@web/stores':
+        specifier: workspace:*
+        version: link:../stores
       '@web/types':
         specifier: workspace:*
         version: link:../types
-      json-bigint:
-        specifier: 'catalog:'
-        version: 1.0.0
-      qrcode:
-        specifier: 'catalog:'
-        version: 1.5.4
-      tippy.js:
-        specifier: 'catalog:'
-        version: 6.3.7
+      '@web/utils':
+        specifier: workspace:*
+        version: link:../utils
       vue:
         specifier: ^3.5.17
         version: 3.5.17(typescript@5.8.3)
-      vue-json-viewer:
-        specifier: 'catalog:'
-        version: 3.0.4(vue@3.5.17(typescript@5.8.3))
       vue-router:
         specifier: 'catalog:'
         version: 4.5.1(vue@3.5.17(typescript@5.8.3))
-      vue-tippy:
+      watermark-js-plus:
         specifier: 'catalog:'
-        version: 6.7.1(vue@3.5.17(typescript@5.8.3))
-    devDependencies:
-      '@types/qrcode':
-        specifier: 'catalog:'
-        version: 1.5.5
+        version: 1.6.2
 
   packages/constants:
     dependencies:
@@ -1571,6 +1485,67 @@ importers:
       vue-router:
         specifier: 'catalog:'
         version: 4.5.1(vue@3.5.17(typescript@5.8.3))
+
+  packages/ui-common:
+    dependencies:
+      '@vueuse/core':
+        specifier: 'catalog:'
+        version: 13.4.0(vue@3.5.17(typescript@5.8.3))
+      '@vueuse/integrations':
+        specifier: 'catalog:'
+        version: 13.4.0(async-validator@4.2.5)(axios@1.10.0)(focus-trap@7.6.4)(jwt-decode@4.0.0)(nprogress@0.2.0)(qrcode@1.5.4)(sortablejs@1.15.6)(vue@3.5.17(typescript@5.8.3))
+      '@web-core/form-ui':
+        specifier: workspace:*
+        version: link:../@core/ui-kit/form-ui
+      '@web-core/popup-ui':
+        specifier: workspace:*
+        version: link:../@core/ui-kit/popup-ui
+      '@web-core/preferences':
+        specifier: workspace:*
+        version: link:../@core/preferences
+      '@web-core/shadcn-ui':
+        specifier: workspace:*
+        version: link:../@core/ui-kit/shadcn-ui
+      '@web-core/shared':
+        specifier: workspace:*
+        version: link:../@core/base/shared
+      '@web/constants':
+        specifier: workspace:*
+        version: link:../constants
+      '@web/hooks':
+        specifier: workspace:*
+        version: link:../hooks
+      '@web/locales':
+        specifier: workspace:*
+        version: link:../locales
+      '@web/types':
+        specifier: workspace:*
+        version: link:../types
+      json-bigint:
+        specifier: 'catalog:'
+        version: 1.0.0
+      qrcode:
+        specifier: 'catalog:'
+        version: 1.5.4
+      tippy.js:
+        specifier: 'catalog:'
+        version: 6.3.7
+      vue:
+        specifier: ^3.5.17
+        version: 3.5.17(typescript@5.8.3)
+      vue-json-viewer:
+        specifier: 'catalog:'
+        version: 3.0.4(vue@3.5.17(typescript@5.8.3))
+      vue-router:
+        specifier: 'catalog:'
+        version: 4.5.1(vue@3.5.17(typescript@5.8.3))
+      vue-tippy:
+        specifier: 'catalog:'
+        version: 6.7.1(vue@3.5.17(typescript@5.8.3))
+    devDependencies:
+      '@types/qrcode':
+        specifier: 'catalog:'
+        version: 1.5.5
 
   packages/utils:
     dependencies:
