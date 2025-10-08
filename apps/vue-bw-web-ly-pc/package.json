@@ -18,6 +18,7 @@
     "@vueuse/core": "catalog:",
     "@web-core/primevue-ui": "workspace:*",
     "@web-core/shadcn-ui": "workspace:*",
+    "@web/api-sdk": "workspace:*",
     "@web/constants": "workspace:*",
     "@web/hooks": "workspace:*",
     "@web/locales": "workspace:*",

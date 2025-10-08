@@ -2,16 +2,14 @@
 
 import type { App } from 'vue';
 
-import type { LocaleSetupOptions, SupportedLanguagesType } from '@web/locales';
-
-import { ref } from 'vue';
+import type { LocaleSetupOptions } from '@web/locales';
 
 import {
   $t,
   setupI18n as coreSetup,
+  LangEnum,
   loadLocalesMapFromDir,
 } from '@web/locales';
-import { preferences } from '@web/preferences';
 
 import dayjs from 'dayjs';
 // import enLocale from 'element-plus/es/locale/lang/en';
@@ -30,7 +28,7 @@ const localesMap = loadLocalesMapFromDir(
  * 这里也可以改造为从服务端获取翻译数据
  * @param lang
  */
-async function loadMessages(lang: SupportedLanguagesType) {
+async function loadMessages(lang: LangEnum) {
   const [appLocaleMessages] = await Promise.all([
     localesMap[lang]?.(),
     loadThirdPartyMessage(lang),
@@ -42,15 +40,16 @@ async function loadMessages(lang: SupportedLanguagesType) {
  * 加载第三方组件库的语言包
  * @param lang
  */
-async function loadThirdPartyMessage(lang: SupportedLanguagesType) {
-  await Promise.all([loadElementLocale(lang), loadDayjsLocale(lang)]);
+async function loadThirdPartyMessage(lang: LangEnum) {
+  // await Promise.all([loadDayjsLocale(lang)]);
+  await loadDayjsLocale(lang);
 }
 
 /**
  * 加载dayjs的语言包
  * @param lang
  */
-async function loadDayjsLocale(lang: SupportedLanguagesType) {
+async function loadDayjsLocale(lang: LangEnum) {
   let locale;
   switch (lang) {
     case 'en-US': {
@@ -73,26 +72,9 @@ async function loadDayjsLocale(lang: SupportedLanguagesType) {
   }
 }
 
-/**
- * 加载element-plus的语言包
- * @param lang
- */
-async function loadElementLocale(lang: SupportedLanguagesType) {
-  // switch (lang) {
-  //   case 'en-US': {
-  //     elementLocale.value = enLocale;
-  //     break;
-  //   }
-  //   case 'zh-CN': {
-  //     elementLocale.value = defaultLocale;
-  //     break;
-  //   }
-  // }
-}
-
 async function setupI18n(app: App, options: LocaleSetupOptions = {}) {
   await coreSetup(app, {
-    defaultLocale: preferences.app.locale,
+    defaultLocale: LangEnum.ZH_CN,
     loadMessages,
     missingWarn: !import.meta.env.PROD,
     ...options,

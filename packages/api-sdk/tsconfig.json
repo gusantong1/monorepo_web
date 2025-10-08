@@ -1,18 +1,11 @@
 {
   "extends": "@web/tsconfig/web.json",
   "compilerOptions": {
-    "target": "ESNext",
     "baseUrl": ".",
-    "module": "ESNext",
-    "moduleResolution": "Node",
     "paths": {
-      "@/*": ["src/*"]
-    },
-    "types": ["vite/client"],
-    "strict": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true
+      "#/*": ["./src/*"]
+    }
   },
-  "include": ["src", "env.d.ts"]
+  "include": ["src"],
+  "exclude": ["node_modules"]
 }

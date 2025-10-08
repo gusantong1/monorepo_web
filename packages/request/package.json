@@ -1,8 +1,6 @@
 {
   "name": "@web/request",
   "version": "5.5.9",
-  
-  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/webjs/vue-web-admin.git",

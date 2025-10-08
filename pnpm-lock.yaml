@@ -626,6 +626,9 @@ importers:
       '@web-core/shadcn-ui':
         specifier: workspace:*
         version: link:../../packages/@core/ui-kit/shadcn-ui
+      '@web/api-sdk':
+        specifier: workspace:*
+        version: link:../../packages/api-sdk
       '@web/constants':
         specifier: workspace:*
         version: link:../../packages/constants
