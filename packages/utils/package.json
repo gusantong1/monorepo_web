@@ -1,8 +1,6 @@
 {
   "name": "@web/utils",
   "version": "5.5.9",
-  
-  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/webjs/vue-web-admin.git",
@@ -20,8 +18,13 @@
     }
   },
   "dependencies": {
+    "@types/crypto-js": "catalog:",
+    "@types/pako": "catalog:",
     "@web-core/shared": "workspace:*",
     "@web-core/typings": "workspace:*",
+    "crypto-js": "catalog:",
+    "js-md5": "catalog:",
+    "pako": "catalog:",
     "vue-router": "catalog:"
   }
 }

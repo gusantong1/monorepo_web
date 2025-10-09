@@ -72,6 +72,9 @@ catalogs:
     '@types/archiver':
       specifier: ^6.0.3
       version: 6.0.3
+    '@types/crypto-js':
+      specifier: ^4.2.2
+      version: 4.2.2
     '@types/eslint':
       specifier: ^9.6.1
       version: 9.6.1
@@ -99,6 +102,9 @@ catalogs:
     '@types/nprogress':
       specifier: ^0.2.3
       version: 0.2.3
+    '@types/pako':
+      specifier: ^2.0.4
+      version: 2.0.4
     '@types/postcss-import':
       specifier: ^14.0.3
       version: 14.0.3
@@ -174,6 +180,9 @@ catalogs:
     cross-env:
       specifier: ^7.0.3
       version: 7.0.3
+    crypto-js:
+      specifier: ^4.2.0
+      version: 4.2.0
     cspell:
       specifier: ^8.19.4
       version: 8.19.4
@@ -270,6 +279,9 @@ catalogs:
     is-ci:
       specifier: ^4.1.0
       version: 4.1.0
+    js-md5:
+      specifier: ^0.8.3
+      version: 0.8.3
     json-bigint:
       specifier: ^1.0.0
       version: 1.0.0
@@ -306,6 +318,9 @@ catalogs:
     ora:
       specifier: ^8.2.0
       version: 8.2.0
+    pako:
+      specifier: ^2.1.0
+      version: 2.1.0
     pinia-plugin-persistedstate:
       specifier: ^4.4.1
       version: 4.4.1
@@ -1552,12 +1567,27 @@ importers:
 
   packages/utils:
     dependencies:
+      '@types/crypto-js':
+        specifier: 'catalog:'
+        version: 4.2.2
+      '@types/pako':
+        specifier: 'catalog:'
+        version: 2.0.4
       '@web-core/shared':
         specifier: workspace:*
         version: link:../@core/base/shared
       '@web-core/typings':
         specifier: workspace:*
         version: link:../@core/base/typings
+      crypto-js:
+        specifier: 'catalog:'
+        version: 4.2.0
+      js-md5:
+        specifier: 'catalog:'
+        version: 0.8.3
+      pako:
+        specifier: 'catalog:'
+        version: 2.1.0
       vue-router:
         specifier: 'catalog:'
         version: 4.5.1(vue@3.5.17(typescript@5.8.3))
@@ -3959,6 +3989,9 @@ packages:
   '@types/conventional-commits-parser@5.0.1':
     resolution: {integrity: sha512-7uz5EHdzz2TqoMfV7ee61Egf5y6NkcO4FB/1iCCQnbeiI1F3xzv3vK5dBCXUCLQgGYS+mUeigK1iKQzvED+QnQ==}
 
+  '@types/crypto-js@4.2.2':
+    resolution: {integrity: sha512-sDOLlVbHhXpAUAL0YHDUUwDZf3iN4Bwi4W6a0W0b+QcAezUbRtH4FVb+9J4h+XFPW7l/gQ9F8qC7P+Ec4k8QVQ==}
+
   '@types/deep-eql@4.0.2':
     resolution: {integrity: sha512-c9h9dVVMigMPc4bwTvC5dxqtqJZwQPePsWjPlpSOnojbor6pGqdk541lfA7AqFQr5pB1BRdq0juY9db81BwyFw==}
 
@@ -4015,6 +4048,9 @@ packages:
 
   '@types/nprogress@0.2.3':
     resolution: {integrity: sha512-k7kRA033QNtC+gLc4VPlfnue58CM1iQLgn1IMAU8VPHGOj7oIHPp9UlhedEnD/Gl8evoCjwkZjlBORtZ3JByUA==}
+
+  '@types/pako@2.0.4':
+    resolution: {integrity: sha512-VWDCbrLeVXJM9fihYodcLiIv0ku+AlOa/TQ1SvYOaBuyrSKgEcro95LJyIsJ4vSo6BXIxOKxiJAat04CmST9Fw==}
 
   '@types/parse-json@4.0.2':
     resolution: {integrity: sha512-dISoDXWWQwUquiKsyZ4Ng+HX2KsPL7LyHKHQwgGFEA3IaKac4Obd+h2a/a6waisAoepJlBcx9paWqjA8/HVjCw==}
@@ -6916,6 +6952,9 @@ packages:
   js-cookie@3.0.5:
     resolution: {integrity: sha512-cEiJEAEoIbWfCZYKWhVwFuvPX1gETRYPw6LlaTKoxD3s2AkXzkCjnp6h0V77ozyqj0jakteJ4YqDJT830+lVGw==}
     engines: {node: '>=14'}
+
+  js-md5@0.8.3:
+    resolution: {integrity: sha512-qR0HB5uP6wCuRMrWPTrkMaev7MJZwJuuw4fnwAzRgP4J4/F8RwtodOKpGp4XpqsLBFzzgqIO42efFAyz2Et6KQ==}
 
   js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
@@ -12897,6 +12936,8 @@ snapshots:
     dependencies:
       '@types/node': 22.16.0
 
+  '@types/crypto-js@4.2.2': {}
+
   '@types/deep-eql@4.0.2': {}
 
   '@types/eslint@9.6.1':
@@ -12950,6 +12991,8 @@ snapshots:
   '@types/normalize-package-data@2.4.4': {}
 
   '@types/nprogress@0.2.3': {}
+
+  '@types/pako@2.0.4': {}
 
   '@types/parse-json@4.0.2': {}
 
@@ -16177,6 +16220,8 @@ snapshots:
       nopt: 7.2.1
 
   js-cookie@3.0.5: {}
+
+  js-md5@0.8.3: {}
 
   js-tokens@4.0.0: {}
 

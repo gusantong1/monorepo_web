@@ -14,7 +14,7 @@ const layoutCommonRoutes: RouteRecordRaw[] = [
     },
     component: () => import('#/layouts/layout1/layout1.vue'),
     name: 'layoutCommon',
-    path: '/layout1',
+    path: '/',
     redirect: '/demo',
 
     children: [

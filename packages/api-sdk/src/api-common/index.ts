@@ -36,6 +36,7 @@ export function initCommonRequestInterceptor(
   requestHeaderCommonConfig: RequestHeaderCommonConfig,
   checkForEncryptParams: CheckForEncryptParams,
 ) {
+  // axios拦截器自带闭包特性，所以函数外部初始化进来的参数会一直不会释放，函数内部签名时间戳是实时生成
   RequestClientManager.addRequestInterceptor(name, {
     fulfilled: async (config) => {
       // 通用请求头赋值
