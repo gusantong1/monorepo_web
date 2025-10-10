@@ -5,7 +5,7 @@ import { LoginReq, LoginRes } from './model';
 /**
  * @description 登陆模块接口
  */
-class ApiLogin {
+export class ApiLogin {
   /**
    * @description 登陆
    * @param data
@@ -17,5 +17,3 @@ class ApiLogin {
     ).post<LoginRes>('/auth/login', data);
   }
 }
-
-export default ApiLogin;

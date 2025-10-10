@@ -1,15 +1,16 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
+// import DatePicker from 'volt/DatePicker.vue';
+import { ApiGame } from '@web/api-sdk';
 import { LangEnum, loadLocaleMessages } from '@web/locales';
 import { ThemeEnum, useThemeStore } from '@web/stores';
 
 // import { DatePicker } from '@web-core/primevue-ui';
 import { Calendar } from '@web-core/shadcn-ui';
-// import DatePicker from 'volt/DatePicker.vue';
 
 const themeStore = useThemeStore();
-
+const apiGame = new ApiGame();
 // 语言切换
 const chanLange = () => {
   const currentLang = document
@@ -26,6 +27,13 @@ const chanLange = () => {
 const value = ref<Date | null>(null);
 
 const date = ref(null);
+
+// 通用请求示例
+const queryGameAssortList = async () => {
+  const res = await apiGame.venueList().catch((error) => error);
+  console.log(res, '--------------');
+};
+queryGameAssortList();
 </script>
 
 <template>
