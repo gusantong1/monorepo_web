@@ -30,8 +30,12 @@ const date = ref(null);
 
 // 通用请求示例
 const queryGameAssortList = async () => {
-  const res = await apiGame.venueList().catch((error) => error);
-  console.log(res, '--------------');
+  try {
+    const res = await apiGame.venueList();
+    console.log(res, '--------------');
+  } catch (error) {
+    console.error(error);
+  }
 };
 queryGameAssortList();
 </script>

@@ -11,7 +11,7 @@ export class ApiGame {
    * @param data
    * @returns
    */
-  public async venueList(data = {}) {
+  public async venueList(data = {}): Promise<VenueListRes> {
     return RequestClientManager.getClients(
       BaseUrlKeyEnum.default,
     ).post<VenueListRes>('/main/venueList', data);
