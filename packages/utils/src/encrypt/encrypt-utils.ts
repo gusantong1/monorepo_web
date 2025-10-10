@@ -8,6 +8,14 @@ export class EncryptUtils {
   private static defaultKey: string = '';
 
   /**
+   * @description 初始化加密工具类
+   * @param key
+   */
+  public static initEncryptUtils(key: string) {
+    this.defaultKey = key;
+  }
+
+  /**
    * @description 创建long随机整型
    */
   public createNonce() {
@@ -75,14 +83,6 @@ export class EncryptUtils {
     const aesEncryptData = this.aesEncrypt(zipData, commonKey);
     return aesEncryptData;
     // const aesEncryptData = aesEncrypt(zipData, commonKey);
-  }
-
-  /**
-   * @description 初始化加密工具类
-   * @param key
-   */
-  public initEncryptUtils(key: string) {
-    EncryptUtils.defaultKey = key;
   }
 
   /**

@@ -9,14 +9,14 @@
     "build:analyze": "pnpm vite build --mode analyze",
     "dev": "pnpm vite --mode development",
     "preview": "vite preview",
-    "typecheck": "vue-tsc --noEmit --skipLibCheck"
+    "typecheck": "vue-tsc --noEmit --skipLibCheck",
+    "serve:bet999_vnd_pre": "cross-env merchant_code=bet999_vnd env-cmd -e pre vite serve"
   },
   "imports": {
     "#/*": "./src/*"
   },
   "dependencies": {
     "@vueuse/core": "catalog:",
-    "@web-core/primevue-ui": "workspace:*",
     "@web-core/shadcn-ui": "workspace:*",
     "@web/api-sdk": "workspace:*",
     "@web/constants": "workspace:*",
@@ -24,6 +24,7 @@
     "@web/locales": "workspace:*",
     "@web/preferences": "workspace:*",
     "@web/request": "workspace:*",
+    "@web/router": "workspace:*",
     "@web/stores": "workspace:*",
     "@web/styles": "workspace:*",
     "@web/types": "workspace:*",

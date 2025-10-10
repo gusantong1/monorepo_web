@@ -635,9 +635,6 @@ importers:
       '@vueuse/core':
         specifier: 'catalog:'
         version: 13.4.0(vue@3.5.17(typescript@5.8.3))
-      '@web-core/primevue-ui':
-        specifier: workspace:*
-        version: link:../../packages/@core/ui-kit/primevue-ui
       '@web-core/shadcn-ui':
         specifier: workspace:*
         version: link:../../packages/@core/ui-kit/shadcn-ui
@@ -659,6 +656,9 @@ importers:
       '@web/request':
         specifier: workspace:*
         version: link:../../packages/request
+      '@web/router':
+        specifier: workspace:*
+        version: link:../../packages/router
       '@web/stores':
         specifier: workspace:*
         version: link:../../packages/stores
@@ -1358,6 +1358,9 @@ importers:
       '@web/request':
         specifier: workspace:*
         version: link:../request
+      '@web/router':
+        specifier: workspace:*
+        version: link:../router
       '@web/stores':
         specifier: workspace:*
         version: link:../stores
@@ -1458,6 +1461,24 @@ importers:
       axios-mock-adapter:
         specifier: 'catalog:'
         version: 2.1.0(axios@1.10.0)
+
+  packages/router:
+    dependencies:
+      '@web-core/typings':
+        specifier: workspace:*
+        version: link:../@core/base/typings
+      pinia:
+        specifier: ^3.0.3
+        version: 3.0.3(typescript@5.8.3)(vue@3.5.17(typescript@5.8.3))
+      pinia-plugin-persistedstate:
+        specifier: 'catalog:'
+        version: 4.4.1(@nuxt/kit@3.17.0(magicast@0.3.5))(pinia@3.0.3(typescript@5.8.3)(vue@3.5.17(typescript@5.8.3)))
+      vue:
+        specifier: ^3.5.17
+        version: 3.5.17(typescript@5.8.3)
+      vue-router:
+        specifier: 'catalog:'
+        version: 4.5.1(vue@3.5.17(typescript@5.8.3))
 
   packages/stores:
     dependencies:

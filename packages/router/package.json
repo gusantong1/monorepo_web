@@ -1,5 +1,5 @@
 {
-  "name": "@web/stores",
+  "name": "@web/router",
   "version": "5.5.9",
   "license": "MIT",
   "type": "module",
@@ -13,12 +13,9 @@
     }
   },
   "dependencies": {
-    "@web-core/preferences": "workspace:*",
-    "@web-core/shared": "workspace:*",
     "@web-core/typings": "workspace:*",
     "pinia": "catalog:",
     "pinia-plugin-persistedstate": "catalog:",
-    "secure-ls": "catalog:",
     "vue": "catalog:",
     "vue-router": "catalog:"
   }

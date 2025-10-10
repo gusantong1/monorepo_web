@@ -21,6 +21,7 @@
     "@web/hooks": "workspace:*",
     "@web/preferences": "workspace:*",
     "@web/request": "workspace:*",
+    "@web/router": "workspace:*",
     "@web/stores": "workspace:*",
     "@web/types": "workspace:*",
     "@web/utils": "workspace:*",
