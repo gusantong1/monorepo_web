@@ -12,7 +12,7 @@ const layoutCommonRoutes: RouteRecordRaw[] = [
       order: 1000,
       title: $t('demos.title'),
     },
-    component: () => import('#/layouts/layout-replenish/layout-replenish.vue'),
+    component: () => import('#/layouts/layout2/layout2.vue'),
     name: 'layoutCommon',
     path: '/layout2',
     redirect: '/r',
@@ -24,7 +24,7 @@ const layoutCommonRoutes: RouteRecordRaw[] = [
         },
         name: 'home',
         path: '/home',
-        component: () => import('#/views/layout-common/home/home.vue'),
+        component: () => import('#/views/layout1/home/home.vue'),
       },
       {
         meta: {
@@ -32,7 +32,7 @@ const layoutCommonRoutes: RouteRecordRaw[] = [
         },
         name: 'demo',
         path: '/active2',
-        component: () => import('#/views/layout-common/demo/demo.vue'),
+        component: () => import('#/views/layout1/demo/demo.vue'),
       },
     ],
   },

@@ -24,7 +24,7 @@ const layoutCommonRoutes: RouteRecordRaw[] = [
         },
         name: 'home',
         path: '/home',
-        component: () => import('#/views/layout-common/home/home.vue'),
+        component: () => import('#/views/layout1/home/home.vue'),
       },
       {
         meta: {
@@ -32,7 +32,7 @@ const layoutCommonRoutes: RouteRecordRaw[] = [
         },
         name: 'demo',
         path: '/demo',
-        component: () => import('#/views/layout-common/demo/demo.vue'),
+        component: () => import('#/views/layout1/demo/demo.vue'),
       },
     ],
   },

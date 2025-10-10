@@ -4,6 +4,9 @@ import { RequestClient } from '@web/request';
  * @description 枚举多个接口key
  */
 export enum BaseUrlKeyEnum {
+  /**
+   * @description 默认接口
+   */
   default = 'default',
 }
 

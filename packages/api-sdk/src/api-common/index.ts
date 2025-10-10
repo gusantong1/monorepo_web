@@ -42,7 +42,7 @@ export interface CheckForEncryptParams {
  * @param name
  * @param requestHeaderCommonConfig
  */
-export function initCommonRequestInterceptor(
+export function initCommonInterceptor(
   name: BaseUrlKeyEnum,
   requestHeaderCommonConfig: RequestHeaderCommonConfig,
   checkForEncryptParams: CheckForEncryptParams,
@@ -125,4 +125,5 @@ export function initCommonRequestInterceptor(
   });
 }
 
+export * from './game';
 export * from './login';

@@ -10,7 +10,7 @@
     "dev": "pnpm vite --mode development",
     "preview": "vite preview",
     "typecheck": "vue-tsc --noEmit --skipLibCheck",
-    "serve:bet999_vnd_pre": "cross-env merchant_code=bet999_vnd env-cmd -e pre vite serve"
+    "serve:bet999_vnd_pre": "cross-env merchant_code=bet999_vnd env-cmd -f .env-cmdrc.cjs -e pre -- vite serve"
   },
   "imports": {
     "#/*": "./src/*"

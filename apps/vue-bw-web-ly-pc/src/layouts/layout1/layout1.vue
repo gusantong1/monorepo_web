@@ -3,7 +3,7 @@
 
 <template>
   <div>
-    <h1>Layout Common</h1>
+    <router-view />
   </div>
 </template>
 
