@@ -22,7 +22,7 @@ export interface RequestHeaderCommonConfig {
 /**
  * @description 通用响应数据
  */
-export interface ResponseData<T = any> {
+export interface ResponseCommonData<T = any> {
   code: number;
   data: T;
   msg: string;
@@ -110,7 +110,7 @@ export function initCommonInterceptor(
           const decryptedData = encryptUtils.decryptData(data as string);
           data = JSON.parse(decryptedData);
         }
-        const resData: ResponseData = data as any;
+        const resData: ResponseCommonData = data as any;
         if (resData.code !== 200 && resData.code === 403) {
           router.push({ path: '/403' });
         }

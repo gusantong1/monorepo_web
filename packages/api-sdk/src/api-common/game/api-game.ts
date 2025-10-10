@@ -1,7 +1,8 @@
+import type { ResponseCommonData } from '../index';
+
 import { BaseUrlKeyEnum, RequestClientManager } from '#/request';
 
 import { VenueListRes } from './model';
-
 /**
  * @description 场馆api接口
  */
@@ -11,9 +12,9 @@ export class ApiGame {
    * @param data
    * @returns
    */
-  public async venueList(data = {}): Promise<VenueListRes> {
-    return RequestClientManager.getClients(
-      BaseUrlKeyEnum.default,
-    ).post<VenueListRes>('/main/venueList', data);
+  public async venueList(data = {}): Promise<ResponseCommonData<VenueListRes>> {
+    return RequestClientManager.getClients(BaseUrlKeyEnum.default).post<
+      ResponseCommonData<VenueListRes>
+    >('/main/venueList', data);
   }
 }
