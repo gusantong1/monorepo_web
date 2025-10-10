@@ -38,7 +38,7 @@ export interface CheckForEncryptParams {
 }
 
 /**
- * @description 初始化各个子应用通用请求头
+ * @description 初始化各个子应用通用请求拦截器和响应拦截器
  * @param name
  * @param requestHeaderCommonConfig
  */
@@ -114,7 +114,7 @@ export function initCommonInterceptor(
         if (resData.code !== 200 && resData.code === 403) {
           router.push({ path: '/403' });
         }
-        return response;
+        return resData as any;
       } catch (error) {
         throw String(error);
       }
