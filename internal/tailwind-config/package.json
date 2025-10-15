@@ -2,8 +2,6 @@
   "name": "@web/tailwind-config",
   "version": "5.5.9",
   "private": true,
-  
-  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/webjs/vue-web-admin.git",
@@ -58,8 +56,7 @@
     "postcss-import": "catalog:",
     "postcss-preset-env": "catalog:",
     "tailwindcss": "catalog:",
-    "tailwindcss-animate": "catalog:",
-    "tailwindcss-primeui": "catalog:"
+    "tailwindcss-animate": "catalog:"
   },
   "devDependencies": {
     "@types/postcss-import": "catalog:"

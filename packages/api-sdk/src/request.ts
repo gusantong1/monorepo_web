@@ -8,6 +8,7 @@ export enum BaseUrlKeyEnum {
    * @description 默认接口
    */
   default = 'default',
+  zaloapp = 'zaloapp',
 }
 
 export type ApiClientMap = Record<BaseUrlKeyEnum, string>;

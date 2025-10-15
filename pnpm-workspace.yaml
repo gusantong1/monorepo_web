@@ -129,6 +129,7 @@ catalog:
   ora: ^8.2.0
   pinia: ^3.0.3
   pinia-plugin-persistedstate: ^4.4.1
+  '@pinia/colada': ^0.17.6
   pkg-types: ^2.2.0
   playwright: ^1.53.2
   postcss: ^8.5.6

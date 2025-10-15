@@ -16,6 +16,7 @@
     }
   },
   "dependencies": {
+    "@pinia/colada": "catalog:",
     "@vueuse/core": "catalog:",
     "@web-core/composables": "workspace:*",
     "@web/hooks": "workspace:*",

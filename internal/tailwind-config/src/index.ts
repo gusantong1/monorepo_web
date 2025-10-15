@@ -6,7 +6,6 @@ import { addDynamicIconSelectors } from '@iconify/tailwind';
 import { getPackagesSync } from '@manypkg/get-packages';
 import typographyPlugin from '@tailwindcss/typography';
 import animate from 'tailwindcss-animate';
-import primeui from 'tailwindcss-primeui';
 
 import { enterAnimationPlugin } from './plugins/entry';
 
@@ -114,8 +113,7 @@ const customColors = {
     ...createColorsPalette('yellow'),
     foreground: 'hsl(var(--warning-foreground))',
   },
-  'primary-demo': 'var(--primary-demo)',
-  'text-demo': 'var(--text-demo)',
+  'hex-primary2-4': 'var(--hex-primary2-4)',
 };
 
 export default {
@@ -131,7 +129,6 @@ export default {
     typographyPlugin,
     addDynamicIconSelectors(),
     enterAnimationPlugin,
-    primeui,
   ],
   prefix: '',
   theme: {

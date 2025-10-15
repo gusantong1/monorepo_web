@@ -16,6 +16,7 @@
     "#/*": "./src/*"
   },
   "dependencies": {
+    "@pinia/colada": "catalog:",
     "@vueuse/core": "catalog:",
     "@web-core/shadcn-ui": "workspace:*",
     "@web/api-sdk": "workspace:*",

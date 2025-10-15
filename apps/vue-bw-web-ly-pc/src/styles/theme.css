@@ -1,9 +1,105 @@
+/* 默认就深色模式 dark */
 :root {
-  --primary-demo:#0037ff;
-  --text-demo: #f50000;
+  /* 薄荷绿*/
+  --green1-8:#09301B;
+  --green1-7:#0e4729;
+  --green1-6:#177744;
+  --green1-5:#1fa75f;
+  --green1-4:#2dee88;
+  --green1-3:#57f1a0;
+  --green1-2:#81f5b8;
+  --green1-1:#c0fadb;
+  /* 草绿色 */
+  --lime2-8:#1e2f17;
+  --lime2-7:#3c5d2e;
+  --lime2-6:#5a8c46;
+  --lime2-5:#78ba5d;
+  --lime2-4:#96E974;
+  --lime2-3:#abed90;
+  --lime2-2:#c0f2ac;
+  --lime2-1:#e0f8d5;
+  /* 赤红色 */
+  --red-8:#320c0c;
+  --red-7:#651818;
+  --red-6:#972424;
+  --red-5:#ca3030;
+  --red-4:#fc3c3c;
+  --red-3:#fd6363;
+  --red-2:#fd8a8a;
+  --red-1:#feb1b1;
+  /* 灰色1 */
+  --grey1-8:#080808;
+  --grey1-7:#202222;
+  --grey1-6:#292D2E;
+  --grey1-5:#323738;
+  --grey1-4:#414747;
+  --grey1-3:#595D5E;
+  --grey1-2:#A4ADAF;
+  --grey1-1:#FFFFFF;
+  /* 灰色2 */
+  --grey2-8:#000000;
+  --grey2-7:#141414;
+  --grey2-6:#222323;
+  --grey2-5:#2D2D2D;
+  --grey2-4:#5D5D5D;
+  --grey2-3:#7D7F7F;
+  --grey2-2:#A9AAA9;
+  --grey2-1:#D4D4D4;
+  /* 绿松石绿 */
+  --turquoise-8:#080b0b;
+  --turquoise-7:#0F1414;
+  --turquoise-6:#192121;
+  --turquoise-5:#22292a;
+  --turquoise-4:#364446;
+  --turquoise-3:#536F6F;
+  --turquoise-2:#758c8c;
+  --turquoise-1:#BEC7CA;
+   /* 青瓷绿 */
+  --celadon-green-8:#0b0d0c;
+  --celadon-green-7:#151b18;
+  --celadon-green-6:#1b221e;
+  --celadon-green-5:#2a362f;
+  --celadon-green-4:#35433B;
+  --celadon-green-3:#5d6962;
+  --celadon-green-2:#868e89;
+  --celadon-green-1:#c2c7c4;
+
+  /* 主色-primary */
+  --hex-primary1-4:var(--green1-4);
+  --hex-primary2-4:var(--lime2-4);
+  
+  /* 次要色-secondary */
+  --hex-secondary-4:var(--red-4);
+
+  /* 背景色-bg */
+  --hex-bg1-7:var(--grey1-7);
+  --hex-bg1-6:var(--grey1-6);
+  --hex-bg1-5:var(--grey1-5);
+  --hex-bg1-4:var(--grey1-4);
+  --hex-bg-4:var(--celadon-green-1);
+  --hex-bg1-1:var(--grey1-1);
+
+  /* 文字与图标颜色-text */
+  --hex-text1-1:var(--grey1-1);
+  --hex-text2-5:var(--grey2-5);
+  --hex-text2-1:var(--grey2-1);
+  --hex-text-1:var(--turquoise-1);
+
+  /* 描边色-border */
+  --hex-border1-1:var(--grey1-1);
+
+  /* 渐变色-gradient */
+  --hex-gradient1-4:var(--green1-4);
+  --hex-gradient2-4:var(--lime2-4);
 }
 
-:root[data-web-theme='light'] {
-  --primary-demo: #b700ff;
+
+
+
+/* :root[data-web-theme='light'] {
+  --green-8: #09301B;
+  --green-4: #2DEE88;
   --text-demo: #00f597;
-}
+
+  --hex-primary-4:var(--green-4);
+} */

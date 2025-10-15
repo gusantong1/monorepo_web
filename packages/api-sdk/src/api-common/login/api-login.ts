@@ -7,6 +7,18 @@ import { LoginReq, LoginRes } from './model';
  */
 export class ApiLogin {
   /**
+   * @description 单独走axios取zalo的access_token
+   * @param data
+   * @returns
+   */
+  public async getZaloAccessTokenApi(data = {}) {
+    return RequestClientManager.getClients(BaseUrlKeyEnum.zaloapp).post(
+      '/v4/access_token',
+      data,
+    );
+  }
+
+  /**
    * @description 登陆
    * @param data
    * @returns
